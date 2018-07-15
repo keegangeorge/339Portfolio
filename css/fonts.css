@@ -1,0 +1,21 @@
+/* Font imported from Adobe Typekit and Google Fonts */
+
+@import url("https://use.typekit.net/zro5twg.css");
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+/* Default font */
+
+* {
+  font-family: 'proxima-nova', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+code {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 900;
+}
+
+code span {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 900;
+}

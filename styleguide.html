@@ -20,6 +20,7 @@
   <!-- Links -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/fonts.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css">
@@ -40,9 +41,9 @@
 
   <!-- Color Palette Section START -->
   <section id="styleguide-colors">
-    <div></div>
-    <div></div>
-    <div></div>
+    <div>Primary Color: #375FEC</div>
+    <div>Secondary Color: #868686</div>
+    <div>Tertiary Color: #0f4196</div>
   </section>
   <!-- Color Palette Section END -->
 
@@ -94,7 +95,8 @@
       <a href="#" class="btn btn-secondary">Secondary Button</a>
     </section>
     <section>
-      <h2>Tertiary Button</h2>
+      <h2>Tertiar
+        y Button</h2>
 
       <h3>CSS:</h3>
       <pre><code class="language-css">.btn .btn-tertiary {}</code></pre>
@@ -105,13 +107,25 @@
       <h3>Rendered Element:</h3>
       <a href="#" class="btn btn-tertiary">Tertiary Button</a>
     </section>
+    <section>
+      <h2>In-text Link</h2>
+
+      <h3>CSS:</h3>
+      <pre><code class="language-css">.text-link{}</code></pre>
+
+      <h3>HTML:</h3>
+      <pre><code class="language-html">&lt;a href=&quot;#&quot; class=&quot;text-link&quot;&gt;In-text Link&lt;/a&gt;</code></pre>
+
+      <h3>Rendered Element:</h3>
+      <p>This is an <a href="#" class="text-link">in-text link</a> that you can use on the website.</p>
+    </section>
   </section>
   <!-- Button Section END -->
 
   <!-- List Section START -->
   <section id="styleguide-list">
     <section>
-      <h2>Unordered List</h2>
+      <h2>Bulleted List</h2>
 
       <h3>CSS:</h3>
       <pre><code class="language-css">ul {}, li {}</code></pre>
@@ -132,7 +146,7 @@
     </section>
 
     <section>
-      <h2>Ordered List</h2>
+      <h2>Numbered List</h2>
 
       <h3>CSS:</h3>
       <pre><code class="language-css">ol {}, li {}</code></pre>
@@ -153,6 +167,29 @@
     </section>
   </section>
   <!-- List Section END -->
+
+  <!-- Nav Section START -->
+  <section id="stleguide-navigation">
+    <h2>Navigation</h2>
+    <section>
+      <h3>CSS:</h3>
+      <pre><code class="language-css">.main-nav {}</code></pre>
+
+      <h3>HTML:</h3>
+      <pre><code class="language-html"></code></pre>
+
+      <h3>Header Navigation</h3>
+      <nav class="main-nav">
+        <ul>
+          <li class="current"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Work</a></li>
+        </ul>
+      </nav>
+    </section>
+  </section>
+  <!-- Nav Section END -->
 
   <!-- Form Section START -->
   <!-- Form Section END -->

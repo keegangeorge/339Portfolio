@@ -10,8 +10,9 @@
   --fade-line: rgba(168, 168, 168, 0.3);
 }
 
-/* Styleguide */
-
+* a {
+  text-decoration: none;
+}
 /* Navigation */
 
 header {

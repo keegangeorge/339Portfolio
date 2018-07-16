@@ -44,7 +44,10 @@ header {
 .main-nav ul {
   padding: 0;
   list-style: none;
+}
 
+.styleguide-nav ul {
+  padding: 1.4em;
 }
 
 .main-nav li {

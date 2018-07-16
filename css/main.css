@@ -32,5 +32,18 @@
   transform: scale(1.1);
   box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
 
+#portfolio1-header img {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#portfolio1-process img {
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
 }

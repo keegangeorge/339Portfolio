@@ -1,0 +1,36 @@
+/* Portfolio Projects */
+
+#portfolio-projects {
+  /* background-color: var(--primary-color); */
+  text-align: center;
+  width: 50%;
+}
+
+#portfolio-projects div {
+  padding: 5em;
+  margin: 0.3em;
+  transition: all ease-in-out 0.3s;
+  box-shadow: 0 0.05em 0.1em rgba(0, 0, 0, 0.5);
+}
+
+#portfolio-projects h2 {
+  color: white;
+}
+#portfolio-projects p {
+  color: white;
+}
+
+#portfolio-projects div:nth-child(1) {
+  background-color: var(--primary-color);
+}
+
+#portfolio-projects div:nth-child(2) {
+  background-color: var(--tertiary-color);
+}
+
+#portfolio-projects div:hover, #portfolio-projects div:focus {
+  transform: scale(1.1);
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+}

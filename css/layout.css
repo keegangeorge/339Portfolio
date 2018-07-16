@@ -27,13 +27,3 @@ section {
 #styleguide-colors div {
   flex: 1;
 }
-
-#portfolio-projects {
-  display: flex;
-  flex-wrap: wrap;
-
-}
-
-#portfolio-projects div {
-  flex: 1;
-}

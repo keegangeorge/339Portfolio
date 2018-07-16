@@ -23,7 +23,6 @@ header {
   margin: 1.5em;
   background-color: var(--primary-color);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.21);
-  color: black;
   width: 100%;
   z-index: 999;
 }
@@ -37,7 +36,7 @@ header {
 .main-nav a {
   color: white;
   text-decoration: none;
-  padding: 1.4em;
+  padding: 2em;
   transition: background-color ease 0.3s;
 
 }
@@ -54,13 +53,10 @@ header {
   text-align: center;
   margin: 0.2em;
   padding: 1em;
-
-
-
 }
 
 .main-nav .current a {
-  padding: 1.4em;
+  padding: 2em;
   color: var(--primary-color);
   background: white;
 
@@ -69,21 +65,14 @@ header {
 .main-nav a:hover, .main-nav a:focus {
   color: white;
   border-bottom: 0.2rem solid white;
-  padding: 1.4em;
+  padding: 2em;
   background-color: var(--tertiary-color);
 }
 
 @media screen and (min-width: 37.5rem) {
-  .main-nav ul {
-    /* padding: 0.8em; */
-  }
 
   .main-nav li {
     display: inline-block;
-
-  }
-  .main-nav a {
-    /* padding: 2.8em 1em; */
   }
 
   .main-nav .current a {
@@ -103,7 +92,7 @@ header {
   }
 
   .main-nav li {
-    padding: 1.2em;
+    /* padding: 1.2em; */
   }
 }
 /* Colors  */
@@ -211,7 +200,7 @@ p {
 
 ul {
   color: gray;
-  line-height: 1.5rem;
+  /* line-height: 1.5rem; */
 }
 
 ol {

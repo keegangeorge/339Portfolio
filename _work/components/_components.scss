@@ -1,4 +1,6 @@
-/* Portfolio Projects */
+@import "buttons";
+@import "forms";
+@import "grids";
 
 #portfolio-projects {
   text-align: center;
@@ -20,11 +22,11 @@
 }
 
 #portfolio-projects div:nth-child(1) {
-  background-color: var(--primary-color);
+  background-color: $primaryColor;
 }
 
 #portfolio-projects div:nth-child(2) {
-  background-color: var(--tertiary-color);
+  background-color:$tertiaryColor;
 }
 
 #portfolio-projects div:hover, #portfolio-projects div:focus {
@@ -45,4 +47,25 @@
   display: inline-block;
   text-align: center;
   margin: 0 auto;
+}
+
+#styleguide-colors div {
+  color: white;
+  padding: 5em;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#styleguide-colors div:nth-child(1) {
+  background-color: $primaryColor;
+}
+
+#styleguide-colors div:nth-child(2) {
+  background-color: $secondaryColor;
+}
+
+#styleguide-colors div:nth-child(3) {
+  background-color: $tertiaryColor;
 }

@@ -1,0 +1,37 @@
+.btn {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-primary {
+  background: $primaryColor;
+  color: white;
+}
+
+.btn-primary:focus, .btn-primary:hover {
+  background: $tertiaryColor;
+  color: white;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  border: solid 0.1rem $primaryColor;
+  color: black;
+}
+
+.btn-secondary:focus, .btn-secondary:hover {
+  background-color: $primaryColor;
+  color: white;
+}
+
+.btn-tertiary {
+  background-color: gray;
+  color: white;
+}
+
+.btn-tertiary:focus, .btn-tertiary:hover {
+  background-color: $primaryColor;
+  color: white;
+}

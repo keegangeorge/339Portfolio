@@ -1,0 +1,79 @@
+@import "_fontface";
+// @include fontface(Quan, fonts/Quan, normal, normal, eot woff2 woff ttf);
+
+/* Font imported from Adobe Typekit and Google Fonts */
+
+@import url("https://use.typekit.net/zro5twg.css");
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+/* Default font */
+
+* {
+  font-family: 'proxima-nova', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+code {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 900;
+}
+
+code span {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 900;
+}
+// TEMPORARY ^^^^^^^^^^^^^
+
+* a {
+  text-decoration: none;
+}
+
+// Typography //
+
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 100;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: 300;
+  color: var(--tertiary-color);
+}
+
+h4 {
+  font-weight: 300;
+  color: gray;
+}
+
+p {
+  color: gray;
+}
+
+.text-link {
+  color: $primaryColor;
+  text-decoration: none;
+  border-bottom: 0.1rem solid $primaryColor;
+  transition: all ease-out 0.23s;
+}
+
+.text-link:focus, .text-link:hover {
+  padding-bottom: 0.3rem;
+  color: $tertiaryColor;
+}
+
+// Lists //
+
+ul {
+  color: gray;
+  /* line-height: 1.5rem; */
+}
+
+ol {
+  color: gray;
+  line-height: 1.5rem;
+}

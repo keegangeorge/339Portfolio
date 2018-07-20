@@ -45,7 +45,6 @@ header {
   padding: 2em;
   color: $primaryColor;
   background: white;
-
 }
 
 .main-nav a:hover, .main-nav a:focus {
@@ -55,7 +54,7 @@ header {
   background-color: $tertiaryColor;
 }
 
-@media screen and (min-width: 37.5rem) {
+@media screen and (min-width: $mediumDevice) {
 
   .main-nav li {
     display: inline-block;
@@ -68,7 +67,7 @@ header {
   }
 }
 
-@media screen and (min-width: 50rem) {
+@media screen and (min-width: $largeDevice) {
   .main-nav {
     font-size: 1rem;
   }

@@ -2,45 +2,37 @@
 @import "forms";
 @import "grids";
 
-#portfolio-projects {
-  text-align: center;
-  width: 50%;
+.portfolio-section {
+  background-color: $secondaryColor;
+  padding: 1em 2em;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 4px 60px;
 }
 
-#portfolio-projects div {
-  padding: 5em;
-  margin: 0.3em;
-  transition: all ease-in-out 0.3s;
-  box-shadow: 0 0.05em 0.1em rgba(0, 0, 0, 0.5);
+.portfolio-header h1 {
+  color: $primaryColor;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-bottom: 0;
 }
 
-#portfolio-projects h2 {
-  color: white;
-}
-#portfolio-projects p {
-  color: white;
+.portfolio-header p {
+  margin: 0 0 3rem 0;
+  padding: 0;
 }
 
-#portfolio-projects div:nth-child(1) {
-  background-color: $primaryColor;
+.portfolio-header img {
+  width: 25%;
 }
 
-#portfolio-projects div:nth-child(2) {
-  background-color:$tertiaryColor;
-}
 
-#portfolio-projects div:hover, #portfolio-projects div:focus {
-  transform: scale(1.1);
-  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
 
-#portfolio1-header img {
-  width: 100%;
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-}
+// #portfolio1-header img {
+//   width: 100%;
+//   display: block;
+//   text-align: center;
+//   margin: 0 auto;
+// }
 
 #portfolio1-process img {
   width: 50%;
@@ -48,6 +40,7 @@
   text-align: center;
   margin: 0 auto;
 }
+// STYLEGUIDE STYLING COLORS //
 
 #styleguide-colors div {
   color: white;
@@ -69,11 +62,12 @@
 #styleguide-colors div:nth-child(3) {
   background-color: $tertiaryColor;
 }
+// CARD STYLING //
 
 .card {
   background-color: $tertiaryColor;
   padding: 1em;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   margin: 1em;
   flex: 1;
   min-height: 13rem;
@@ -102,33 +96,20 @@
   justify-content: center;
 }
 
-.card:hover, .card:focus {
+.card:focus,
+.card:hover {
   background-color: $primaryColor;
   cursor: pointer;
   transform: scale(1.02);
   box-shadow: 0 0.05em 0.1em rgba(0, 0, 0, 0.5);
 }
 
-.card:hover > p, .card:focus > p {
-  color: #B6B6B6;
-}
-.card:hover > h3, .card:focus > h3 {
+.card:focus > p,
+.card:hover > p {
   color: #B6B6B6;
 }
 
-// temp:
-.button {
-	display: block;
-	background-color: #000;
-	color: white;
-	text-decoration: none;
-	transition: background-color 0.3s;
-	padding: 1em;
-	border: 0;
-	width: 100%;
-	text-align: left;
-}
-
-.button:hover, .button:focus {
-	background-color: #CCC;
+.card:focus > h3,
+.card:hover > h3 {
+  color: #B6B6B6;
 }

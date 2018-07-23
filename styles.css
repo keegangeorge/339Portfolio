@@ -150,7 +150,15 @@ body {
 
 .card-stack h2 {
   text-align: center;
-  color: #4f4f64; }
+  color: #5c5be0; }
+
+.card-stack__item:hover, .card-stack__item:focus {
+  border: 1px solid rgba(79, 79, 99, 0.4); }
+
+.card-stack__item {
+  -webkit-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s; }
 
 footer {
   text-align: center;

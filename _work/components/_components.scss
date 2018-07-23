@@ -69,3 +69,66 @@
 #styleguide-colors div:nth-child(3) {
   background-color: $tertiaryColor;
 }
+
+.card {
+  background-color: $tertiaryColor;
+  padding: 1em;
+  border-radius: .2rem;
+  margin: 1em;
+  flex: 1;
+  min-height: 13rem;
+  max-width: 20rem;
+  min-width: 12rem;
+  transition: all ease 0.3s;
+}
+
+.card h3 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: $primaryColor;
+}
+
+.card p {
+  color: $quaternaryColor;
+  font-size: 0.9rem;
+}
+
+.work {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card:hover, .card:focus {
+  background-color: $primaryColor;
+  cursor: pointer;
+  transform: scale(1.02);
+  box-shadow: 0 0.05em 0.1em rgba(0, 0, 0, 0.5);
+}
+
+.card:hover > p, .card:focus > p {
+  color: #B6B6B6;
+}
+.card:hover > h3, .card:focus > h3 {
+  color: #B6B6B6;
+}
+
+// temp:
+.button {
+	display: block;
+	background-color: #000;
+	color: white;
+	text-decoration: none;
+	transition: background-color 0.3s;
+	padding: 1em;
+	border: 0;
+	width: 100%;
+	text-align: left;
+}
+
+.button:hover, .button:focus {
+	background-color: #CCC;
+}

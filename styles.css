@@ -502,19 +502,22 @@ template {
 
 .btn-secondary {
   border: solid 0.1rem #5c5be0;
-  color: black; }
+  color: #5c5be0; }
 
 .btn-secondary:focus, .btn-secondary:hover {
   background-color: #5c5be0;
   color: white; }
 
 .btn-tertiary {
-  background-color: gray;
+  background-color: #4f4f64;
   color: white; }
 
 .btn-tertiary:focus, .btn-tertiary:hover {
   background-color: #5c5be0;
   color: white; }
+
+.styleguide-container {
+  margin: 1em; }
 
 *, *::after, *::before {
   -webkit-box-sizing: border-box;

@@ -698,10 +698,14 @@ section {
   background-color: #5c5be0; }
 
 #styleguide-colors div:nth-child(2) {
-  background-color: #29282e; }
+  background-color: #29282e;
+  border: 1px solid rgba(79, 79, 99, 0.62); }
 
 #styleguide-colors div:nth-child(3) {
   background-color: #1d1e22; }
+
+#styleguide-colors div:nth-child(4) {
+  background-color: #4f4f64; }
 
 .card {
   background-color: #1d1e22;

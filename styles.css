@@ -537,44 +537,25 @@ section {
   -ms-flex: 1;
   flex: 1; }
 
-#portfolio-projects {
-  text-align: center;
-  width: 50%; }
+.portfolio-section {
+  background-color: #29282e;
+  padding: 1em 2em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 4px 60px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 4px 60px; }
 
-#portfolio-projects div {
-  padding: 5em;
-  margin: 0.3em;
-  -webkit-transition: all ease-in-out 0.3s;
-  -o-transition: all ease-in-out 0.3s;
-  transition: all ease-in-out 0.3s;
-  -webkit-box-shadow: 0 0.05em 0.1em rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0.05em 0.1em rgba(0, 0, 0, 0.5); }
+.portfolio-header h1 {
+  color: #5c5be0;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-bottom: 0; }
 
-#portfolio-projects h2 {
-  color: white; }
+.portfolio-header p {
+  margin: 0 0 3rem 0;
+  padding: 0; }
 
-#portfolio-projects p {
-  color: white; }
-
-#portfolio-projects div:nth-child(1) {
-  background-color: #5c5be0; }
-
-#portfolio-projects div:nth-child(2) {
-  background-color: #1d1e22; }
-
-#portfolio-projects div:hover, #portfolio-projects div:focus {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  -webkit-box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
-  cursor: pointer; }
-
-#portfolio1-header img {
-  width: 100%;
-  display: block;
-  text-align: center;
-  margin: 0 auto; }
+.portfolio-header img {
+  width: 25%; }
 
 #portfolio1-process img {
   width: 50%;
@@ -602,7 +583,7 @@ section {
 .card {
   background-color: #1d1e22;
   padding: 1em;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   margin: 1em;
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -641,7 +622,8 @@ section {
   -ms-flex-pack: center;
   justify-content: center; }
 
-.card:hover, .card:focus {
+.card:focus,
+.card:hover {
   background-color: #5c5be0;
   cursor: pointer;
   -webkit-transform: scale(1.02);
@@ -650,51 +632,25 @@ section {
   -webkit-box-shadow: 0 0.05em 0.1em rgba(0, 0, 0, 0.5);
   box-shadow: 0 0.05em 0.1em rgba(0, 0, 0, 0.5); }
 
-.card:hover > p, .card:focus > p {
+.card:focus > p,
+.card:hover > p {
   color: #B6B6B6; }
 
-.card:hover > h3, .card:focus > h3 {
+.card:focus > h3,
+.card:hover > h3 {
   color: #B6B6B6; }
-
-.button {
-  display: block;
-  background-color: #000;
-  color: white;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s;
-  -o-transition: background-color 0.3s;
-  transition: background-color 0.3s;
-  padding: 1em;
-  border: 0;
-  width: 100%;
-  text-align: left; }
-
-.button:hover, .button:focus {
-  background-color: #CCC; }
 
 header {
-  position: fixed;
   top: -1.5em;
   left: -1.5em;
   right: 0;
   margin: 1.5em;
-  background-color: #5c5be0;
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.21);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.21);
   width: 100%;
   z-index: 999; }
-
-.main-nav {
-  background: #5c5be0;
-  font-size: 0.8rem;
-  -webkit-transition: all ease-in-out 0.3s;
-  -o-transition: all ease-in-out 0.3s;
-  transition: all ease-in-out 0.3s; }
 
 .main-nav a {
   color: white;
   text-decoration: none;
-  padding: 2em;
   -webkit-transition: background-color ease 0.3s;
   -o-transition: background-color ease 0.3s;
   transition: background-color ease 0.3s; }
@@ -709,33 +665,35 @@ header {
 .main-nav li {
   list-style: none;
   display: block;
+  text-align: center; }
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap; }
+
+.nav-title {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   text-align: center;
-  margin: 0.2em;
-  padding: 1em; }
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #4f4f64; }
 
-.main-nav .current a {
-  padding: 2em;
+.back-arrow i {
+  color: #4f4f64;
+  font-size: 1.5em;
+  -webkit-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  transition: all ease 0.2s; }
+
+.back-arrow i:focus, .back-arrow i:hover {
   color: #5c5be0;
-  background: white; }
-
-.main-nav a:hover, .main-nav a:focus {
-  color: white;
-  border-bottom: 0.2rem solid white;
-  padding: 2em;
-  background-color: #1d1e22; }
-
-@media screen and (min-width: 37.5rem) {
-  .main-nav li {
-    display: inline-block; }
-  .main-nav .current a {
-    color: white;
-    border-bottom: 0.2rem solid white;
-    background-color: #5c5be0; } }
-
-@media screen and (min-width: 50rem) {
-  .main-nav {
-    font-size: 1rem; }
-  .main-nav a {
-    font-size: 1rem; }
-  .main-nav li {
-    /* padding: 1.2em; */ } }
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1); }

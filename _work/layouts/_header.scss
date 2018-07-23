@@ -1,27 +1,16 @@
 header {
-  position: fixed;
   top: -1.5em;
   left: -1.5em;
   right: 0;
   margin: 1.5em;
-  background-color: $primaryColor;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.21);
   width: 100%;
   z-index: 999;
-}
-
-.main-nav {
-  background: $primaryColor;
-  font-size: 0.8rem;
-  transition: all ease-in-out 0.3s;
 }
 
 .main-nav a {
   color: white;
   text-decoration: none;
-  padding: 2em;
   transition: background-color ease 0.3s;
-
 }
 
 .main-nav ul {
@@ -37,46 +26,29 @@ header {
   list-style: none;
   display: block;
   text-align: center;
-  margin: 0.2em;
-  padding: 1em;
 }
 
-.main-nav .current a {
-  padding: 2em;
+.nav-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.nav-title {
+  flex: 1;
+  text-align: center;
+  align-self: center;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: $quaternaryColor;
+}
+
+.back-arrow i {
+  color: $quaternaryColor;
+  font-size: 1.5em;
+  transition: all ease 0.2s;
+}
+
+.back-arrow i:focus, .back-arrow i:hover {
   color: $primaryColor;
-  background: white;
-}
-
-.main-nav a:hover, .main-nav a:focus {
-  color: white;
-  border-bottom: 0.2rem solid white;
-  padding: 2em;
-  background-color: $tertiaryColor;
-}
-
-@media screen and (min-width: $mediumDevice) {
-
-  .main-nav li {
-    display: inline-block;
-  }
-
-  .main-nav .current a {
-    color: white;
-    border-bottom: 0.2rem solid white;
-    background-color: $primaryColor;
-  }
-}
-
-@media screen and (min-width: $largeDevice) {
-  .main-nav {
-    font-size: 1rem;
-  }
-
-  .main-nav a {
-    font-size: 1rem;
-  }
-
-  .main-nav li {
-    /* padding: 1.2em; */
-  }
+  transform: scale(1.1);
 }

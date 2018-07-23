@@ -8,20 +8,24 @@
   <meta name="author" content="Keegan George">
   <meta name="subject" content="Keegan George Developer Portfolio">
   <!-- Meta Tags: Theme Color -->
-  <meta name="theme-color" content="#0002d4">
+  <meta name="theme-color" content="#5c5be0">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="msapplication-navbutton-color" content="#0002d4">
+  <meta name="msapplication-navbutton-color" content="#5c5be0">
+  <meta name="msapplication-TileColor" content="#5c5be0">
+  <meta name="msapplication-TileImage" content="img/logo-windows.png">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <!-- Meta Tags: Icon -->
-  <link type="image/png" rel="shortcut icon" href="img/icon.png">
-  <link rel="apple-touch-startup-image" href="img/icon.png">
-  <link rel="icon" sizes="192x192" href="img/icon.png">
+  <!-- Meta Tags: Icons -->
+  <link type="image/png" rel="shortcut icon" href="img/favicon-16.png" sizes="16x16">
+  <link type="image/png" rel="shortcut icon" href="img/favicon-32.png" sizes="32x32">
+  <link type="image/png" rel="shortcut icon" href="img/favicon-48.png" sizes="48x48">
+  <link type="image/png" rel="shortcut icon" href="img/favicon-96.png" sizes="96x96">
+  <link rel="apple-touch-startup-image" href="img/logo-iphone.png">
+  <link rel="icon" sizes="180x180" href="img/logo-iphone.png">
   <!-- Links -->
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism-tomorrow.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 
   <title>Keegan George | Style Guide</title>
 </head>
@@ -30,158 +34,154 @@
   <!-- Header Section START -->
   <header>
     <nav class="main-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="work.html">Work</a></li>
+      <ul class="nav-container">
+        <li class="back-arrow"><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+        <li class="nav-title">Styleguide</li>
       </ul>
     </nav>
   </header>
   <!-- Header Section END -->
 
-  <!-- Page Title -->
-  <h1>Portfolio Style Guide:</h1>
-  <p>A guideline for designing elements on this portfolio website.</p>
-
   <!-- Color Palette Section START -->
-  <section id="styleguide-colors">
-    <div>Primary Color: #375FEC</div>
-    <div>Secondary Color: #868686</div>
-    <div>Tertiary Color: #0f4196</div>
-  </section>
-  <!-- Color Palette Section END -->
+  <section class="styleguide-container">
+    <section id="styleguide-colors" class="portfolio-section">
+      <div>Primary Color: #5c5be0</div>
+      <div>Secondary Color: #29282e</div>
+      <div>Tertiary Color: #1d1e22</div>
+      <div>Quaternary Color: #4f4f64</div>
+    </section>
+    <!-- Color Palette Section END -->
 
-  <!-- Typography Section START -->
-  <section id="styleguide-headings">
-    <section>
-      <h3>CSS:</h3>
-      <pre><code class="language-css">h1 {}, h2 {}, h3 {}, h4 {}</code></pre>
+    <!-- Typography Section START -->
+    <section id="styleguide-headings" class="portfolio-section">
+      <section>
+        <h3>CSS:</h3>
+        <pre><code class="language-css">h1 {}, h2 {}, h3 {}, h4 {}</code></pre>
 
-      <h3>HTML: </h3>
-      <pre><code class="language-html">&lt;h1&gt;Large Heading&lt;/h1&gt;
+        <h3>HTML: </h3>
+        <pre><code class="language-html">&lt;h1&gt;Large Heading&lt;/h1&gt;
 &lt;h2&gt;Medium Heading&lt;/h2&gt;
 &lt;h3&gt;Small Heading&lt;/h3&gt;
 &lt;h4&gt;Tiny Heading&lt;/h4&gt;</code></pre>
 
-      <h3>Rendered Element:</h3>
-      <h1>Large Heading</h1>
-      <h2>Medium Heading</h2>
-      <h3>Small Heading</h3>
-      <h4>Tiny Heading</h4>
+        <h3>Rendered Element:</h3>
+        <h1>Large Heading</h1>
+        <h2>Medium Heading</h2>
+        <h3>Small Heading</h3>
+        <h4>Tiny Heading</h4>
+      </section>
     </section>
-  </section>
-  <!-- Typography Section END  -->
+    <!-- Typography Section END  -->
 
-  <!-- Button Section START -->
-  <section id="styleguide-buttons">
-    <section>
-      <h2>Primary Button</h2>
+    <!-- Button Section START -->
+    <section id="styleguide-buttons" class="portfolio-section">
+      <section>
+        <h2>Primary Button</h2>
 
-      <h3>CSS:</h3>
-      <pre><code class="language-css">.btn .btn-primary {}</code></pre>
+        <h3>CSS:</h3>
+        <pre><code class="language-css">.btn .btn-primary {}</code></pre>
 
-      <h3>HTML:</h3>
-      <pre><code class="language-html">&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Primary Button&lt;/a&gt;</code></pre>
+        <h3>HTML:</h3>
+        <pre><code class="language-html">&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Primary Button&lt;/a&gt;</code></pre>
 
-      <h3>Rendered Element:</h3>
-      <a href="#" class="btn btn-primary">Primary Button</a>
-    </section>
-    <section>
-      <h2>Secondary Button</h2>
+        <h3>Rendered Element:</h3>
+        <a href="#" class="btn btn-primary">Primary Button</a>
+      </section>
+      <section>
+        <h2>Secondary Button</h2>
 
-      <h3>CSS:</h3>
-      <pre><code class="language-css">.btn .btn-secondary {}</code></pre>
+        <h3>CSS:</h3>
+        <pre><code class="language-css">.btn .btn-secondary {}</code></pre>
 
-      <h3>HTML:</h3>
-      <pre><code class="language-html">&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary Button&lt;/a&gt;</code></pre>
+        <h3>HTML:</h3>
+        <pre><code class="language-html">&lt;a href=&quot;#&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary Button&lt;/a&gt;</code></pre>
 
-      <h3>Rendered Element:</h3>
-      <a href="#" class="btn btn-secondary">Secondary Button</a>
-    </section>
-    <section>
-      <h2>Tertiar
+        <h3>Rendered Element:</h3>
+        <a href="#" class="btn btn-secondary">Secondary Button</a>
+      </section>
+      <section>
+        <h2>Tertiar
         y Button</h2>
 
-      <h3>CSS:</h3>
-      <pre><code class="language-css">.btn .btn-tertiary {}</code></pre>
+        <h3>CSS:</h3>
+        <pre><code class="language-css">.btn .btn-tertiary {}</code></pre>
 
-      <h3>HTML:</h3>
-      <pre><code class="language-html">&lt;a href=&quot;#&quot; class=&quot;btn btn-tertiary&quot;&gt;Tertiary Button&lt;/a&gt;</code></pre>
+        <h3>HTML:</h3>
+        <pre><code class="language-html">&lt;a href=&quot;#&quot; class=&quot;btn btn-tertiary&quot;&gt;Tertiary Button&lt;/a&gt;</code></pre>
 
-      <h3>Rendered Element:</h3>
-      <a href="#" class="btn btn-tertiary">Tertiary Button</a>
+        <h3>Rendered Element:</h3>
+        <a href="#" class="btn btn-tertiary">Tertiary Button</a>
+      </section>
+      <section>
+        <h2>In-text Link</h2>
+
+        <h3>CSS:</h3>
+        <pre><code class="language-css">.text-link{}</code></pre>
+
+        <h3>HTML:</h3>
+        <pre><code class="language-html">&lt;a href=&quot;#&quot; class=&quot;text-link&quot;&gt;In-text Link&lt;/a&gt;</code></pre>
+
+        <h3>Rendered Element:</h3>
+        <p>This is an <a href="#" class="text-link">in-text link</a> that you can use on the website.</p>
+      </section>
     </section>
-    <section>
-      <h2>In-text Link</h2>
+    <!-- Button Section END -->
 
-      <h3>CSS:</h3>
-      <pre><code class="language-css">.text-link{}</code></pre>
+    <!-- List Section START -->
+    <section id="styleguide-list" class="portfolio-section">
+      <section>
+        <h2>Bulleted List</h2>
 
-      <h3>HTML:</h3>
-      <pre><code class="language-html">&lt;a href=&quot;#&quot; class=&quot;text-link&quot;&gt;In-text Link&lt;/a&gt;</code></pre>
+        <h3>CSS:</h3>
+        <pre><code class="language-css">ul {}, li {}</code></pre>
 
-      <h3>Rendered Element:</h3>
-      <p>This is an <a href="#" class="text-link">in-text link</a> that you can use on the website.</p>
-    </section>
-  </section>
-  <!-- Button Section END -->
-
-  <!-- List Section START -->
-  <section id="styleguide-list">
-    <section>
-      <h2>Bulleted List</h2>
-
-      <h3>CSS:</h3>
-      <pre><code class="language-css">ul {}, li {}</code></pre>
-
-      <h3>HTML:</h3>
-      <pre><code class="language-html">&lt;ul&gt;
+        <h3>HTML:</h3>
+        <pre><code class="language-html">&lt;ul&gt;
   &lt;li&gt;Item 1&lt;/li&gt;
   &lt;li&gt;Item 2&lt;/li&gt;
   &lt;li&gt;Item 3&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 
-      <h3>Rendered Element:</h3>
-      <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-      </ul>
-    </section>
+        <h3>Rendered Element:</h3>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Numbered List</h2>
+      <section>
+        <h2>Numbered List</h2>
 
-      <h3>CSS:</h3>
-      <pre><code class="language-css">ol {}, li {}</code></pre>
+        <h3>CSS:</h3>
+        <pre><code class="language-css">ol {}, li {}</code></pre>
 
-      <h3>HTML:</h3>
-      <pre><code class="language-html">&lt;ol&gt;
+        <h3>HTML:</h3>
+        <pre><code class="language-html">&lt;ol&gt;
   &lt;li&gt;Item 1&lt;/li&gt;
   &lt;li&gt;Item 2&lt;/li&gt;
   &lt;li&gt;Item 3&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
 
-      <h3>Rendered Element:</h3>
-      <ol>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-      </ol>
+        <h3>Rendered Element:</h3>
+        <ol>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ol>
+      </section>
     </section>
-  </section>
-  <!-- List Section END -->
+    <!-- List Section END -->
 
-  <!-- Nav Section START -->
-  <section id="stleguide-navigation">
-    <h2>Navigation</h2>
-    <section>
-      <h3>CSS:</h3>
-      <pre><code class="language-css">.main-nav {}</code></pre>
+    <!-- Nav Section START -->
+    <section id="stleguide-navigation" class="portfolio-section">
+      <h2>Navigation</h2>
+      <section>
+        <h3>CSS:</h3>
+        <pre><code class="language-css">.main-nav {}</code></pre>
 
-      <h3>HTML:</h3>
-      <pre><code class="language-html">      &lt;nav class=&quot;main-nav&quot;&gt;
+        <h3>HTML:</h3>
+        <pre><code class="language-html">      &lt;nav class=&quot;main-nav&quot;&gt;
         &lt;ul&gt;
           &lt;li class=&quot;current&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
           &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
@@ -190,16 +190,16 @@
         &lt;/ul&gt;
       &lt;/nav&gt;</code></pre>
 
-      <h3>Header Navigation</h3>
-        <nav class="main-nav styleguide-nav">
-          <ul>
-            <li class="current"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Work</a></li>
-          </ul>
-        </nav>
+        <header>
+          <nav class="main-nav">
+            <ul class="nav-container">
+              <li class="back-arrow"><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+              <li class="nav-title">Work</li>
+            </ul>
+          </nav>
+        </header>
 
+      </section>
     </section>
   </section>
   <!-- Nav Section END -->

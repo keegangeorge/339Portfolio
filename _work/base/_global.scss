@@ -208,7 +208,15 @@ body {
 
 .card-stack h2 {
   text-align: center;
-  color: $quaternaryColor;
+  color: $primaryColor;
+}
+
+.card-stack__item:hover, .card-stack__item:focus {
+  border: 1px solid rgba(79, 79, 99, 0.4);
+}
+
+.card-stack__item {
+  transition: all ease-in-out 0.3s;
 }
 
 

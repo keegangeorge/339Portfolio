@@ -8,15 +8,20 @@
   <meta name="author" content="Keegan George">
   <meta name="subject" content="Keegan George Developer Portfolio">
   <!-- Meta Tags: Theme Color -->
-  <meta name="theme-color" content="#0002d4">
+  <meta name="theme-color" content="$primaryColor">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="msapplication-navbutton-color" content="#0002d4">
+  <meta name="msapplication-navbutton-color" content="#5c5be0">
+  <meta name="msapplication-TileColor" content="#5c5be0">
+  <meta name="msapplication-TileImage" content="img/logo-windows.png">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <!-- Meta Tags: Icon -->
-  <link type="image/png" rel="shortcut icon" href="img/icon.png">
-  <link rel="apple-touch-startup-image" href="img/icon.png">
-  <link rel="icon" sizes="192x192" href="img/icon.png">
+  <!-- Meta Tags: Icons -->
+  <link type="image/png" rel="shortcut icon" href="img/favicon-16.png" sizes="16x16">
+  <link type="image/png" rel="shortcut icon" href="img/favicon-32.png" sizes="32x32">
+  <link type="image/png" rel="shortcut icon" href="img/favicon-48.png" sizes="48x48">
+  <link type="image/png" rel="shortcut icon" href="img/favicon-96.png" sizes="96x96">
+  <link rel="apple-touch-startup-image" href="img/logo-iphone.png">
+  <link rel="icon" sizes="180x180" href="img/logo-iphone.png">
   <!-- Links -->
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css">
@@ -39,46 +44,53 @@
   <!-- Header Section END -->
 
   <!-- Page Title -->
-  <section class="portfolio-header" id="portfolio1-header">
+  <section class="portfolio-header">
     <h1>Rookie Ninja</h1>
     <p>An arcade style platformer game created using the Processing (Java) language. Source code available on <a href="https://github.com/keegangeorge/RookieNinja" class="text-link">Github.</a></p>
-    <img src="img/rookieninja-menu.PNG" alt="the main menu screen of a game called rookie ninja.">
+    <div class="portfolio-header-images ninja-images">
+      <img src="img/rookieninja-menu.PNG" alt="the main menu screen of a game called rookie ninja.">
+      <img src="img/rookieninja-instructions.PNG" alt="the main menu screen of a game called rookie ninja.">
+      <img src="img/rookieninja-costume.PNG" alt="the main menu screen of a game called rookie ninja.">
+      <img src="img/rookieninja-ingame.PNG" alt="the main menu screen of a game called rookie ninja.">
+    </div>
   </section>
+  <!-- Page Title -->
 
 
 
+  <section class="portfolio-project-container">
+    <section class="portfolio-section portfolio-project-description">
+      <h2>Project Description</h2>
+      <p>The final project for my digital games course consisted of creating a game based on the programming and game design material we were taught throughout the course. This would be created using the language Processing, which is based off of Java. The
+        game I created was a platformer game called &quot;Rookie Ninja&quot;. The goal for the player is to travel through a series of platforms while dodging numerous obstacles. </p>
+    </section>
 
-
-  <section id="portfolio1-project-description" class="portfolio-section">
-    <h2>Project Description</h2>
-    <p>The final project for my digital games course consisted of creating a game based on the programming and game design material we were taught throughout the course. This would be created using the language Processing, which is based off of Java. The
-      game I created was a platformer game called &quot;Rookie Ninja&quot;. The goal for the player is to travel through a series of platforms while dodging numerous obstacles. </p>
-  </section>
-
-  <section id="portfolio1-process" class="portfolio-section">
-    <h2>Process</h2>
-    <h3>Organization and Planning</h3>
-    <p>Prior to creating the game, much organization and planning was required. I started off with a storyboard, which aided in outlining the key points of the game. This also helped to understand how the difficulty scale would increase as the game progresses.</p>
-    <img src="img/rookieninja-storyboard.png" alt="a storyboard filled with sketches of how the rookie ninja game would look like.">
-    <p>Another vital step prior to the development of the game was the UML diagram. This flow chart like organization would help to plan the various parts of the program. This step aided greatly in the actual coding process.</p>
-    <h3>Design Creation</h3>
-    <p>Prior to any coding however, I focused on creating all the game assets. One major component of that included the character design. I started out with some sketches for posible designs, and then translated those into digital renders. To enhance the
-      design and increase professionalism for the game, I set the goal of creating an animating character. After some research on the best approach for this, I created a sprite sheet. This consisted of a large image that contained many iterations of the
-      character in a sequence.</p>
+    <section class="portfolio-section portfolio-project-process">
+      <h2>Process</h2>
+      <h3>Organization and Planning</h3>
+      <p>Prior to creating the game, much organization and planning was required. I started off with a storyboard, which aided in outlining the key points of the game. This also helped to understand how the difficulty scale would increase as the game progresses.</p>
+      <!-- TODO display as elements instead of image -->
+      <img src="img/ninja-storyboard.png" alt="a storyboard filled with sketches of how the rookie ninja game would look like.">
+      <p>Another vital step prior to the development of the game was the UML diagram. This flow chart like organization would help to plan the various parts of the program. This step aided greatly in the actual coding process.</p>
+      <h3>Design Creation</h3>
+      <p>Prior to any coding however, I focused on creating all the game assets. One major component of that included the character design. I started out with some sketches for posible designs, and then translated those into digital renders. To enhance the
+        design and increase professionalism for the game, I set the goal of creating an animating character. After some research on the best approach for this, I created a sprite sheet. This consisted of a large image that contained many iterations of
+        the character in a sequence.</p>
       <img src="img/rookieninja-sketches.png" alt="sketches of a ninja wearing a ninja suit.">
       <img src="img/rookieninja-sprite.PNG" alt="sketches of a ninja wearing a ninja suit.">
 
-    <h3>Development</h3>
-    <p>Due to the immense planning, programming the game was an efficient process, and the development of the game progressed rapidly. Commencing with the first level, I programmed the game physics, and major components, which then led to the next few levels.</p>
-    <img src="img/rookieninja-ingame.png" alt="rookie ninja game with many platforms in which a ninja is placed currently on one.">
+      <h3>Development</h3>
+      <p>Due to the immense planning, programming the game was an efficient process, and the development of the game progressed rapidly. Commencing with the first level, I programmed the game physics, and major components, which then led to the next few
+        levels.</p>
+      <img src="img/rookieninja-ingame.png" alt="rookie ninja game with many platforms in which a ninja is placed currently on one.">
+    </section>
+    <section class="portfolio-section portfolio-project-probandscss">
+      <h2>Problems and Successes</h2>
+      <p>There were some obstacles I encountered while developing the game. One of which, was that the program slowed down very much and began to lag. I found out that this was due to the various large sized images being implemented. To solve this problem,
+        I organized many images into a grid like structure on one image file, and instead used code to grab portions of that larger image to display the smaller images. Overall, I felt successful with this project because I was able to develop a fully
+        featured game that ran smoothly, and did not have any problems.</p>
+    </section>
   </section>
-  <section>
-    <h2>Problems and Successes</h2>
-    <p>There were some obstacles I encountered while developing the game. One of which, was that the program slowed down very much and began to lag. I found out that this was due to the various large sized images being implemented. To solve this problem,
-      I organized many images into a grid like structure on one image file, and instead used code to grab portions of that larger image to display the smaller images. Overall, I felt successful with this project because I was able to develop a fully featured
-      game that ran smoothly, and did not have any problems.</p>
-  </section>
-
 
 
 

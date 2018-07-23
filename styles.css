@@ -763,6 +763,9 @@ section {
 .card:hover > h3 {
   color: #B6B6B6; }
 
+.about-fragment h3 {
+  color: #5c5be0; }
+
 header {
   top: -1.5em;
   left: -1.5em;

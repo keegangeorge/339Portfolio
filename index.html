@@ -25,13 +25,17 @@
   <!-- Links -->
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+
 
   <title>Keegan George | Portfolio</title>
 </head>
 
 <body>
+  <h1 class="primary-title">Keegan George | Portfolio</h1>
   <!-- Header Section START -->
-  <header>
+  <!-- <header>
     <nav class="main-nav">
       <ul>
         <li class="current"><a href="index.html">Home</a></li>
@@ -40,28 +44,75 @@
         <li><a href="work.html">Work</a></li>
       </ul>
     </nav>
-  </header>
+  </header> -->
   <!-- Header Section END -->
 
   <!-- Page Title -->
-  <h1>Keegan George | Portfolio</h1>
 
-  <section id="biography-section">
-    <h2>Bio</h2>
-    <p>Hello! My name is Keegan. I was born and raised in Vancouver, Canada, but being of Sri Lankan descent I am able to speak fluent English and Tamil. From ayoung age, I've always had a passion for technology and creativity. As a person who adores seeing sleek designs and enjoys delving into the roots of technology down to the bare code, I have found great interest in App Development, UX Design, and Web Design. I take pleasure in designing applications with an intuitive user interface, as well as creating eye-catching game and product desings. </p>
-  </section>
+  <ul class="card-stack">
+    <li class="card-stack__item work-fragment">
+      <h2>Work</h2>
+      <section class="work" id="work-items">
+        <div class="card work-1">
+          <h3>Rookie Ninja</h3>
+          <p>A platformer game created using Processing (Java).</p>
+        </div>
+
+        <div class="card work-2">
+          <h3>Hairtell Salon</h3>
+          <p>The redevelopment and redesign of a website for a hair salon company.</p>
+        </div>
+
+        <div class="card work-2">
+          <h3>More Projects</h3>
+          <p>Check out some of my smaller projects on Github</p>
+        </div>
+      </section>
+
+    </li>
+    <li class="card-stack__item contact-fragment">
+      <h2>Contact</h2></span>
+      </h2>
+    </li>
+    <li class="card-stack__item about-fragment">
+      <h2>About</h2>
+    </li>
+    <li class="card-stack__item home-fragment">
+      <h2>HOME</h2>
+      <img src="img/logo.png" alt="keegan george logo circular lines surrounding initials k and g">
+      <section id="biography-section">
+        <h2>Bio</h2>
+        <p>Hello! My name is <a href="#" class="text-link">Keegan.</a> I was born and raised in Vancouver, Canada, but being of Sri Lankan descent I am able to speak fluent English and Tamil. From ayoung age, I've always had a passion for technology and
+          creativity. As a person who adores seeing sleek designs and enjoys delving into the roots of technology down to the bare code, I have found great interest in App Development, UX Design, and Web Design. I take pleasure in designing applications
+          with an intuitive user interface, as well as creating eye-catching game and product desings. </p>
+      </section>
+    </li>
+
+    <div class="views-toggle views-toggle--hidden">
+      <svg stroke="white" viewBox="0 0 24 24" width="30" height="30" stroke-width="1">
+        <path d="M5,5 20,5" />
+        <path d="M0,12.5 24,12.5"/>
+        <path d="M5,20 20,20"/>
+      </svg>
+    </div>
+  </ul>
 
 
   <!-- Footer Section START -->
-  <footer>
-
+  <footer class="hide-footer">
+    <a href="https://dribbble.com/keegangeorge" target="_blank"><i class="fab fa-dribbble"></i></a>
+    <a href="https://github.com/keegangeorge/" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="mailto:keegan.george@outlook.com" target="_blank"><i class="far fa-envelope"></i></a>
+    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="styleguide.html"><i class="fas fa-code"></i></a>
   </footer>
   <!-- Footer Section END -->
 
   <!-- Script Links -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js">
   </script>
-
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="./js/card-stack.js"></script>
 </body>
 
 </html>

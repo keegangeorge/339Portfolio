@@ -159,6 +159,7 @@
 
 // STYLEGUIDE STYLING COLORS //
 
+
 #styleguide-colors div {
   color: white;
   padding: 5em;
@@ -174,10 +175,15 @@
 
 #styleguide-colors div:nth-child(2) {
   background-color: $secondaryColor;
+  border: 1px solid rgba(79, 79, 99, 0.62);
 }
 
 #styleguide-colors div:nth-child(3) {
   background-color: $tertiaryColor;
+}
+
+#styleguide-colors div:nth-child(4) {
+  background-color: $quaternaryColor;
 }
 // CARD STYLING //
 
@@ -229,4 +235,9 @@
 .card:focus > h3,
 .card:hover > h3 {
   color: #B6B6B6;
+}
+
+.about-fragment h3 {
+  color: $primaryColor;
+
 }

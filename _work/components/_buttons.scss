@@ -11,14 +11,14 @@
 }
 
 .btn-primary:focus, .btn-primary:hover {
-  background: $tertiaryColor;
+  background: $quaternaryColor;
   color: white;
   transform: scale(1.05);
 }
 
 .btn-secondary {
   border: solid 0.1rem $primaryColor;
-  color: black;
+  color: $primaryColor;
 }
 
 .btn-secondary:focus, .btn-secondary:hover {
@@ -27,11 +27,15 @@
 }
 
 .btn-tertiary {
-  background-color: gray;
+  background-color: $quaternaryColor;
   color: white;
 }
 
 .btn-tertiary:focus, .btn-tertiary:hover {
   background-color: $primaryColor;
   color: white;
+}
+
+.styleguide-container {
+  margin: 1em;
 }

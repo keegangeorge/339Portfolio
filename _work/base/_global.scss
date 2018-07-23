@@ -1,16 +1,40 @@
-@import "_fontface";
-// @include fontface(Quan, fonts/Quan, normal, normal, eot woff2 woff ttf);
-
+@import "_fontface"; // @include fontface(Quan, fonts/Quan, normal, normal, eot woff2 woff ttf);
 /* Font imported from Adobe Typekit and Google Fonts */
-
 @import url("https://use.typekit.net/zro5twg.css");
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
-/* Default font */
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro'); /* Default font */
+
+@mixin cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin easeOut {
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
 
 * {
   font-family: 'proxima-nova', 'Helvetica', sans-serif;
   font-style: normal;
   font-weight: 400;
+  color: white;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+  background-color: $tertiaryColor;
 }
 
 code {
@@ -27,7 +51,6 @@ code span {
 * a {
   text-decoration: none;
 }
-
 // Typography //
 
 h1 {
@@ -51,7 +74,7 @@ h4 {
 }
 
 p {
-  color: gray;
+  color: $quaternaryColor;
 }
 
 .text-link {
@@ -61,11 +84,11 @@ p {
   transition: all ease-out 0.23s;
 }
 
-.text-link:focus, .text-link:hover {
-  padding-bottom: 0.3rem;
-  color: $tertiaryColor;
+.text-link:focus,
+.text-link:hover {
+  padding-bottom: 0.1rem;
+  color: $primaryColor;
 }
-
 // Lists //
 
 ul {
@@ -76,4 +99,135 @@ ul {
 ol {
   color: gray;
   line-height: 1.5rem;
+}
+
+@mixin cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin easeOut {
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@function longshadow($color_a,$color_b,$stepnum, $opacity: 1){
+	$gradient_steps: null;
+	@for $i from 1 through $stepnum {
+		$weight: ( ( $i - 1 ) / $stepnum ) * 100;
+		$colour_mix: mix($color_b, rgba($color_a, $opacity), $weight);
+		$seperator: null;
+		@if($i != $stepnum){
+			$seperator: #{','};
+		}
+		$gradient_steps: append( #{$gradient_steps}, #{$i}px #{$i}px $colour_mix $seperator );
+ }
+  @return $gradient_steps;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.card-stack {
+  position: relative;
+  min-height: 90vh;
+  overflow: hidden;
+
+  &__item {
+    will-change: transform, opacity, box-shadow;
+    @include cover;
+    margin-bottom: 50px;
+    z-index: 1;
+    padding: 0 50px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 60px;
+    transform-origin: center 5%;
+    overflow: hidden;
+    @include easeOut;
+    background: $secondaryColor;
+  }
+}
+
+.views-toggle {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  cursor: pointer;
+  @include easeOut;
+  transition-duration: .3s;
+  visibility: visible;
+  opacity: 0.6;
+
+  &--hidden {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 0;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.view-footer {
+  display: block;
+}
+
+.hide-footer {
+  display: none;
+}
+
+.primary-title {
+  display: none;
+}
+
+.home-fragment h2 {
+  display: none;
+}
+
+.home-fragment img {
+  padding: 10em 0;
+  width: 20%;
+  margin: 0 auto;
+  display: block;
+}
+
+.card-stack h2 {
+  text-align: center;
+  color: $quaternaryColor;
+}
+
+
+footer {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+footer i {
+  color: $quaternaryColor;
+  font-size: 2rem;
+  transition: all ease 0.3s;
+  padding: 0 1rem;
+}
+
+footer i:hover, footer i:focus {
+  color: $primaryColor;
+}
+
+.hidden {
+  display: none;
 }

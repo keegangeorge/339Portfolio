@@ -486,7 +486,7 @@ template {
   color: white; }
 
 .btn-primary:focus, .btn-primary:hover {
-  background: #1d1e22;
+  background: #4f4f64;
   color: white;
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);

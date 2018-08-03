@@ -1,14 +1,12 @@
 @import "buttons";
 @import "forms";
-@import "grids";
+@import "grids"; // PORTFOLIO PAGES STYLING //
 
-
-// PORTFOLIO PAGES STYLING //
 .portfolio-section {
   background-color: $secondaryColor;
   padding: 1em 1.2em;
   box-shadow: rgba(0, 0, 0, 0.4) 0 4px 60px;
-  margin: 0.5em 0em;
+  margin: 0.5em 0;
 }
 
 .portfolio-section h2 {
@@ -24,20 +22,18 @@
 .portfolio-section p {
   font-size: 1rem;
 }
-
 @media screen and (min-width: $mobileLarge) {
   .portfolio-section {
     padding: 1em 2em;
   }
 }
-
 @media screen and (min-width: $mediumDevice) {
   .portfolio-section {
-    margin: 1em 0em;
+    margin: 1em 0;
   }
 }
-
 // PORTFOLIO HEADER STYLING //
+
 .portfolio-header {
   margin: 2em;
 }
@@ -70,36 +66,37 @@
 .ninja-images img:nth-child(2) {
   display: none;
 }
+
 .ninja-images img:nth-child(3) {
   display: none;
 }
+
 .ninja-images img:nth-child(4) {
   display: none;
 }
-
-
 @media screen and (min-width: $mobileLarge) {
   .portfolio-header img {
     width: 44%;
   }
+
   .ninja-images img:nth-child(2) {
     display: inline;
   }
+
   .ninja-images img:nth-child(3) {
     display: inline;
   }
+
   .ninja-images img:nth-child(4) {
     display: inline;
   }
 }
-
 @media screen and (min-width: $mediumDevice) {
   .portfolio-header h1 {
     font-size: 2.5rem;
   }
 
-  .portfolio-header img {
-  }
+  .portfolio-header img {}
 }
 @media screen and (min-width: $largeDevice) {
   .portfolio-header img {
@@ -112,8 +109,8 @@
   filter: grayscale(0);
   transform: scale(1.05);
 }
-
 // PORTFOLIO CONTENT STYLING //
+
 .portfolio-project-container {
   display: flex;
   margin: 1em;
@@ -123,7 +120,6 @@
 .portfolio-project-description {
   flex: 100%;
   order: 1;
-
 }
 
 .portfolio-project-process {
@@ -142,23 +138,17 @@
   margin: 0 auto;
   padding: 1em;
 }
-
 @media screen and (min-width: $largeDevice) {
   .portfolio-project-process img {
     width: 60%;
   }
 }
-
 @media screen and (min-width: $xLargeDevice) {
   .portfolio-project-probandscss {
     flex: 1;
   }
 }
-
-
-
 // STYLEGUIDE STYLING COLORS //
-
 
 #styleguide-colors div {
   color: white;
@@ -219,25 +209,85 @@
   justify-content: center;
 }
 
-.card:focus,
-.card:hover {
-  background-color: $primaryColor;
-  cursor: pointer;
-  transform: scale(1.02);
-  box-shadow: 0 0.05em 0.1em rgba(0, 0, 0, 0.5);
+.page-container {
+  background: $secondaryColor;
+  // margin: 6rem;
+  padding: 15rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 5px 60px;
 }
 
-.card:focus > p,
-.card:hover > p {
-  color: #B6B6B6;
+#home-container {
+  transition: all 1s ease-in-out;
+  margin: 6rem;
 }
 
-.card:focus > h3,
-.card:hover > h3 {
-  color: #B6B6B6;
-}
-
-.about-fragment h3 {
+header h1 {
   color: $primaryColor;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0;
+}
 
+header h2 {
+  color: #76769E;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+}
+
+header img {
+  padding: 1rem 0;
+  width: 35%;
+  margin: 0 auto;
+  display: block;
+}
+
+#header-tagline {
+  font-size: 1.3rem;
+  color: $quaternaryColor;
+}
+
+#header-tagline:after {
+  content: "";
+  animation: header-tagline 5s linear infinite;
+}
+@keyframes header-tagline {
+  0% {
+    content: "Full Stack Developer";
+  }
+
+  25% {
+    content: "App Development";
+  }
+
+  50% {
+    content: "Web Development";
+  }
+
+  75% {
+    content: "Game Development";
+  }
+
+  100% {
+    content: "UX Design";
+  }
+}
+
+.home-nav a {
+  padding: 0.5rem 3rem;
+  margin: 0.5rem;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.transform {
+  transition: all 2s ease;
+}
+
+.transform-active {
+  background-color: #45CEE0;
+  height: 200px;
+  width: 200px;
 }

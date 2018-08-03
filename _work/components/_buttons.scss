@@ -6,12 +6,12 @@
 }
 
 .btn-primary {
-  background: $primaryColor;
+  background: $quaternaryColor;
   color: white;
 }
 
 .btn-primary:focus, .btn-primary:hover {
-  background: $quaternaryColor;
+  background: $primaryColor;
   color: white;
   transform: scale(1.05);
 }

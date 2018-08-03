@@ -130,12 +130,6 @@ body {
   .views-toggle:hover {
     opacity: 1; }
 
-.view-footer {
-  display: block; }
-
-.hide-footer {
-  display: none; }
-
 .primary-title {
   display: none; }
 
@@ -487,11 +481,11 @@ template {
   transition: all 0.25s ease-in-out; }
 
 .btn-primary {
-  background: #5c5be0;
+  background: #4f4f64;
   color: white; }
 
 .btn-primary:focus, .btn-primary:hover {
-  background: #4f4f64;
+  background: #5c5be0;
   color: white;
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
@@ -550,7 +544,7 @@ section {
   padding: 1em 1.2em;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 4px 60px;
   box-shadow: rgba(0, 0, 0, 0.4) 0 4px 60px;
-  margin: 0.5em 0em; }
+  margin: 0.5em 0; }
 
 .portfolio-section h2 {
   color: #5c5be0;
@@ -569,7 +563,7 @@ section {
 
 @media screen and (min-width: 37.5rem) {
   .portfolio-section {
-    margin: 1em 0em; } }
+    margin: 1em 0; } }
 
 .portfolio-header {
   margin: 2em; }
@@ -746,81 +740,83 @@ section {
   -ms-flex-pack: center;
   justify-content: center; }
 
-.card:focus,
-.card:hover {
-  background-color: #5c5be0;
-  cursor: pointer;
-  -webkit-transform: scale(1.02);
-  -ms-transform: scale(1.02);
-  transform: scale(1.02);
-  -webkit-box-shadow: 0 0.05em 0.1em rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0.05em 0.1em rgba(0, 0, 0, 0.5); }
-
-.card:focus > p,
-.card:hover > p {
-  color: #B6B6B6; }
-
-.card:focus > h3,
-.card:hover > h3 {
-  color: #B6B6B6; }
-
-.about-fragment h3 {
-  color: #5c5be0; }
-
-header {
-  top: -1.5em;
-  left: -1.5em;
-  right: 0;
-  margin: 1.5em;
-  width: 100%;
-  z-index: 999; }
-
-.main-nav a {
-  color: white;
-  text-decoration: none;
-  -webkit-transition: background-color ease 0.3s;
-  -o-transition: background-color ease 0.3s;
-  transition: background-color ease 0.3s; }
-
-.main-nav ul {
-  padding: 0;
-  list-style: none; }
-
-.styleguide-nav ul {
-  padding: 1.4em; }
-
-.main-nav li {
-  list-style: none;
-  display: block;
-  text-align: center; }
-
-.nav-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap; }
-
-.nav-title {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+.page-container {
+  background: #29282e;
+  padding: 15rem;
   text-align: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1.5em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 5px 60px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 5px 60px; }
+
+#home-container {
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  margin: 6rem; }
+
+header h1 {
+  color: #5c5be0;
+  font-weight: 100;
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0; }
+
+header h2 {
+  color: #76769E;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize; }
+
+header img {
+  padding: 1rem 0;
+  width: 35%;
+  margin: 0 auto;
+  display: block; }
+
+#header-tagline {
+  font-size: 1.3rem;
   color: #4f4f64; }
 
-.back-arrow i {
-  color: #4f4f64;
-  font-size: 1.5em;
-  -webkit-transition: all ease 0.2s;
-  -o-transition: all ease 0.2s;
-  transition: all ease 0.2s; }
+#header-tagline:after {
+  content: "";
+  -webkit-animation: header-tagline 5s linear infinite;
+  animation: header-tagline 5s linear infinite; }
 
-.back-arrow i:focus, .back-arrow i:hover {
-  color: #5c5be0;
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1); }
+@-webkit-keyframes header-tagline {
+  0% {
+    content: "Full Stack Developer"; }
+  25% {
+    content: "App Development"; }
+  50% {
+    content: "Web Development"; }
+  75% {
+    content: "Game Development"; }
+  100% {
+    content: "UX Design"; } }
+
+@keyframes header-tagline {
+  0% {
+    content: "Full Stack Developer"; }
+  25% {
+    content: "App Development"; }
+  50% {
+    content: "Web Development"; }
+  75% {
+    content: "Game Development"; }
+  100% {
+    content: "UX Design"; } }
+
+.home-nav a {
+  padding: 0.5rem 3rem;
+  margin: 0.5rem;
+  font-weight: 500;
+  text-transform: lowercase; }
+
+.transform {
+  -webkit-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease; }
+
+.transform-active {
+  background-color: #45CEE0;
+  height: 200px;
+  width: 200px; }

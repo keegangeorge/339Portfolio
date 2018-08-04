@@ -5,25 +5,36 @@
   transition: all 0.25s ease-in-out;
 }
 
+.btn-large {
+  padding: .5rem 4rem;
+  font-size: 1.5rem;
+}
+
 .btn-primary {
   background: $quaternaryColor;
   color: white;
 }
 
-.btn-primary:focus, .btn-primary:hover {
+.btn-primary:focus,
+.btn-primary:hover {
   background: $primaryColor;
   color: white;
   transform: scale(1.05);
 }
 
 .btn-secondary {
-  border: solid 0.1rem $primaryColor;
-  color: $primaryColor;
+  border: solid 0.1rem white;
+  color: white;
+  font-weight: 100;
+  text-transform: capitalize;
+  background-color: inherit;
+  box-shadow: inset 0 0 0 0 white;
 }
 
-.btn-secondary:focus, .btn-secondary:hover {
-  background-color: $primaryColor;
-  color: white;
+.btn-secondary:focus,
+.btn-secondary:hover {
+  color: $quaternaryColor;
+  box-shadow: inset 262px 0 0 0 white;
 }
 
 .btn-tertiary {

@@ -6,8 +6,38 @@
 }
 
 .btn-large {
-  padding: .5rem 4rem;
-  font-size: 1.5rem;
+  // padding: .5rem 4rem;
+  padding: 0.5rem 1rem;
+  // font-size: 1.5rem;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: $mobileLarge) {
+  .btn-large {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: $mediumDevice) {
+  .btn-large {
+    padding: 0.5rem 3rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: $largeDevice) {
+  .btn-large {
+    padding: 0.5rem 4rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: $xLargeDevice) {
+  .btn-large {
+    padding: 0.5rem 2.5rem;
+    font-size: 2rem;
+  }
 }
 
 .btn-primary {

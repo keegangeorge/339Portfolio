@@ -246,8 +246,6 @@ header img {
   display: block;
 }
 
-
-
 #header-tagline {
   font-size: 1.3rem;
   color: $quaternaryColor;
@@ -287,8 +285,6 @@ header img {
   font-weight: 500;
   text-transform: lowercase;
 }
-
-
 // MOBILE LARGE //
 @media screen and (min-width: $mobileLarge) {
   #home-container {
@@ -308,7 +304,6 @@ header img {
     margin: 0.5rem;
   }
 }
-
 // MEDIUM DEVICE //
 @media screen and (min-width: $mediumDevice) {
   #home-container {
@@ -324,7 +319,6 @@ header img {
     margin: 1rem;
   }
 }
-
 // LARGE DEVICE //
 @media screen and (min-width: $largeDevice) {
   #home-container {
@@ -339,7 +333,6 @@ header img {
     width: 25%;
   }
 }
-
 // 4K DEVICE //
 @media screen and (min-width: $xLargeDevice) {
   #home-container {
@@ -347,7 +340,7 @@ header img {
   }
 
   .page-container {
-    padding: 10rem 0rem;
+    padding: 10rem 0;
   }
 
   header img {
@@ -360,8 +353,6 @@ header img {
   }
 }
 
-
-
 .transform {
   transition: all 2s ease;
 }
@@ -373,21 +364,25 @@ header img {
 }
 
 .work-header {
-  padding: 2rem 2rem;
+  // padding: 2rem 2rem;
+  padding: 1rem;
 }
 
-.work-header:hover, .work-header:focus {}
+.work-header a span {
+  display: none; // remove on larger
+}
 
 .work-header i {
   color: white;
   font-size: 1.4rem;
-  padding: 0.5rem;
+  // padding: 0.5rem; regular size
   transition: transform ease 0.3s;
 }
 
 .work-header a {
   color: white;
-  font-size: 1.4rem;
+  // font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .work-header i:focus,
@@ -413,13 +408,15 @@ header img {
 }
 
 .work-item h2 {
-  font-size: 5rem;
+  // font-size: 5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin: 0;
 }
 
 .work-content {
-  margin: 10rem 10rem;
+  // margin: 10rem 10rem; regular size
+  margin: 5rem 2rem;
 }
 
 .project-tags {
@@ -429,15 +426,83 @@ header img {
 
 .work-content p {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 1.3rem;
+  // font-size: 1.3rem; regular size
+  font-size: 1rem;
   width: 75%;
 }
 
 .project-tags span {
   font-size: 0.8rem;
-  padding: .2rem 1rem;
+  // padding: .2rem 1rem;
+  padding: 0.2rem 0.5rem;
   background-color: rgba(255, 255, 255, 0.2);
-  // background-color: rgba(11, 60, 147, 0.4);
   color: rgba(255, 255, 255, 0.9);
-  border-radius: .1rem;
+  border-radius: 0.1rem;
+}
+// LARGE MOBILE DEVICE //
+@media screen and (min-width: $mobileLarge) {
+  .work-header {
+    padding: 2rem;
+  }
+
+  .work-header a span {
+    display: inline;
+  }
+
+  .work-header i {
+    padding: 0.5rem;
+  }
+
+  .work-header a {
+    font-size: 1.4rem;
+  }
+
+  .work-item h2 {
+    font-size: 3.5rem;
+  }
+
+  .work-content {
+    margin: 5rem 2rem;
+  }
+
+  .work-content p {
+    font-size: 1.2rem;
+  }
+
+  .project-tags span {
+    padding: 0.2rem 0.5rem;
+  }
+}
+// MEDIUM DEVICE //
+@media screen and (min-width: $mediumDevice) {
+  .work-item h2 {
+    font-size: 5rem;
+  }
+  .work-content {
+    margin: 5rem 3rem;
+  }
+
+  .work-content p {
+    font-size: 1.3rem;
+  }
+
+  .project-tags span {
+    padding: .2rem 1rem;
+  }
+}
+// LARGE DEVICE //
+@media screen and (min-width: $largeDevice) {
+  .work-content {
+    margin: 10rem 10rem;
+  }
+}
+
+// 4K DEVICE //
+@media screen and (min-width: $xLargeDevice) {
+  .work-content {
+    margin: 10rem 20rem;
+    width: 40%;
+  }
+
+
 }

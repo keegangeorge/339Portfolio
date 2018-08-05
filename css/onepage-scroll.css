@@ -32,7 +32,7 @@ body, .onepage-wrapper, html {
 .onepage-pagination {
   position: absolute;
   right: 10px;
-  top: 35%;
+  top: 25%;
   z-index: 5;
   list-style: none;
   margin: 0;
@@ -43,11 +43,20 @@ body, .onepage-wrapper, html {
   text-align: center;
 }
 .onepage-pagination li a{
-  padding: 3rem 2rem;
+  padding: 3rem 0.5rem;
   width: 4px;
   height: 4px;
   display: block;
+}
 
+@media screen and (min-width: 26.5625rem) {
+  .onepage-pagination {
+    top: 30%;
+  }
+
+  .onepage-pagination li a {
+    padding: 3rem 2rem;
+  }
 }
 .onepage-pagination li a:before{
   content: '';

@@ -463,8 +463,28 @@ template {
   transition: all 0.25s ease-in-out; }
 
 .btn-large {
-  padding: .5rem 4rem;
-  font-size: 1.5rem; }
+  padding: 0.5rem 1rem;
+  font-size: 1rem; }
+
+@media screen and (min-width: 26.5625rem) {
+  .btn-large {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem; } }
+
+@media screen and (min-width: 37.5rem) {
+  .btn-large {
+    padding: 0.5rem 3rem;
+    font-size: 1.4rem; } }
+
+@media screen and (min-width: 50rem) {
+  .btn-large {
+    padding: 0.5rem 4rem;
+    font-size: 1.5rem; } }
+
+@media screen and (min-width: 160rem) {
+  .btn-large {
+    padding: 0.5rem 2.5rem;
+    font-size: 2rem; } }
 
 .btn-primary {
   background: #4f4f64;
@@ -836,7 +856,7 @@ header img {
   #home-container {
     margin: 4rem 50rem; }
   .page-container {
-    padding: 10rem 0rem; }
+    padding: 10rem 0; }
   header img {
     width: 30%; }
   .home-nav a {
@@ -854,12 +874,14 @@ header img {
   width: 200px; }
 
 .work-header {
-  padding: 2rem 2rem; }
+  padding: 1rem; }
+
+.work-header a span {
+  display: none; }
 
 .work-header i {
   color: white;
   font-size: 1.4rem;
-  padding: 0.5rem;
   -webkit-transition: -webkit-transform ease 0.3s;
   transition: -webkit-transform ease 0.3s;
   -o-transition: transform ease 0.3s;
@@ -868,7 +890,7 @@ header img {
 
 .work-header a {
   color: white;
-  font-size: 1.4rem; }
+  font-size: 1rem; }
 
 .work-header i:focus,
 .work-header i:hover {
@@ -890,12 +912,12 @@ header img {
   background-color: #58adff; }
 
 .work-item h2 {
-  font-size: 5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin: 0; }
 
 .work-content {
-  margin: 10rem 10rem; }
+  margin: 5rem 2rem; }
 
 .project-tags {
   margin-bottom: 1rem;
@@ -903,15 +925,52 @@ header img {
 
 .work-content p {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 1.3rem;
+  font-size: 1rem;
   width: 75%; }
 
 .project-tags span {
   font-size: 0.8rem;
-  padding: .2rem 1rem;
+  padding: 0.2rem 0.5rem;
   background-color: rgba(255, 255, 255, 0.2);
   color: rgba(255, 255, 255, 0.9);
-  border-radius: .1rem; }
+  border-radius: 0.1rem; }
+
+@media screen and (min-width: 26.5625rem) {
+  .work-header {
+    padding: 2rem; }
+  .work-header a span {
+    display: inline; }
+  .work-header i {
+    padding: 0.5rem; }
+  .work-header a {
+    font-size: 1.4rem; }
+  .work-item h2 {
+    font-size: 3.5rem; }
+  .work-content {
+    margin: 5rem 2rem; }
+  .work-content p {
+    font-size: 1.2rem; }
+  .project-tags span {
+    padding: 0.2rem 0.5rem; } }
+
+@media screen and (min-width: 37.5rem) {
+  .work-item h2 {
+    font-size: 5rem; }
+  .work-content {
+    margin: 5rem 3rem; }
+  .work-content p {
+    font-size: 1.3rem; }
+  .project-tags span {
+    padding: .2rem 1rem; } }
+
+@media screen and (min-width: 50rem) {
+  .work-content {
+    margin: 10rem 10rem; } }
+
+@media screen and (min-width: 160rem) {
+  .work-content {
+    margin: 10rem 20rem;
+    width: 40%; } }
 
 footer {
   text-align: center; }

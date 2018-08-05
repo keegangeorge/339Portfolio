@@ -36,12 +36,10 @@ h1 {
 
 h2 {
   font-weight: 100;
-  color: var(--primary-color);
   text-transform: uppercase; }
 
 h3 {
-  font-weight: 300;
-  color: var(--tertiary-color); }
+  font-weight: 300; }
 
 h4 {
   font-weight: 300;
@@ -961,16 +959,35 @@ header img {
   .work-content p {
     font-size: 1.3rem; }
   .project-tags span {
-    padding: .2rem 1rem; } }
+    padding: 0.2rem 1rem; } }
 
 @media screen and (min-width: 50rem) {
   .work-content {
-    margin: 10rem 10rem; } }
+    margin: 10rem; } }
 
 @media screen and (min-width: 160rem) {
   .work-content {
     margin: 10rem 20rem;
     width: 40%; } }
+
+.about-bio {
+  text-align: left;
+  margin: 1rem; }
+
+.about-bio h2 {
+  color: #5c5be0;
+  text-transform: capitalize; }
+
+.about-contact {
+  text-align: left;
+  margin: 1rem; }
+
+.about-contact h2 {
+  color: #5c5be0;
+  text-transform: capitalize; }
+
+.about-contact a {
+  color: #4f4f64; }
 
 footer {
   text-align: center; }

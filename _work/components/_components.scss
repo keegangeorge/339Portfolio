@@ -478,6 +478,7 @@ header img {
   .work-item h2 {
     font-size: 5rem;
   }
+
   .work-content {
     margin: 5rem 3rem;
   }
@@ -487,22 +488,43 @@ header img {
   }
 
   .project-tags span {
-    padding: .2rem 1rem;
+    padding: 0.2rem 1rem;
   }
 }
 // LARGE DEVICE //
 @media screen and (min-width: $largeDevice) {
   .work-content {
-    margin: 10rem 10rem;
+    margin: 10rem;
   }
 }
-
 // 4K DEVICE //
 @media screen and (min-width: $xLargeDevice) {
   .work-content {
     margin: 10rem 20rem;
     width: 40%;
   }
+}
 
+.about-bio {
+  text-align: left;
+  margin: 1rem;
+}
 
+.about-bio h2 {
+  color: $primaryColor;
+  text-transform: capitalize;
+}
+
+.about-contact {
+  text-align: left;
+  margin: 1rem;
+}
+
+.about-contact h2 {
+  color: $primaryColor;
+  text-transform: capitalize;
+}
+
+.about-contact a {
+  color: $quaternaryColor;
 }

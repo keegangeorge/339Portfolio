@@ -990,7 +990,8 @@ header img {
   color: #4f4f64; }
 
 footer {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 5rem; }
 
 footer i {
   color: #4f4f64;

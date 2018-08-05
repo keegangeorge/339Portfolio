@@ -211,15 +211,15 @@
 
 .page-container {
   background: $secondaryColor;
-  // margin: 6rem;
-  padding: 15rem;
+  padding: 0.3rem 0;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.2) 0 5px 60px;
 }
 
 #home-container {
   transition: all 1s ease-in-out;
-  margin: 6rem;
+  // margin: 6rem; regular size
+  margin: 0.8rem;
 }
 
 header h1 {
@@ -228,6 +228,7 @@ header h1 {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 0;
+  font-size: 1.7rem; // remove on laptop
 }
 
 header h2 {
@@ -239,10 +240,13 @@ header h2 {
 
 header img {
   padding: 1rem 0;
-  width: 35%;
+  // width: 35%;
+  width: 40%; // change on laptop
   margin: 0 auto;
   display: block;
 }
+
+
 
 #header-tagline {
   font-size: 1.3rem;
@@ -276,11 +280,87 @@ header img {
 }
 
 .home-nav a {
-  padding: 0.5rem 3rem;
-  margin: 0.5rem;
+  // padding: 0.5rem 3rem;
+  padding: 0.6rem 2rem; // change on laptop
+  // margin: 0.5rem;
+  margin: 1rem; // change on laptop
   font-weight: 500;
   text-transform: lowercase;
 }
+
+
+// MOBILE LARGE //
+@media screen and (min-width: $mobileLarge) {
+  #home-container {
+    margin: 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header img {
+    width: 45%;
+  }
+
+  .home-nav a {
+    padding: 0.5rem 3rem;
+    margin: 0.5rem;
+  }
+}
+
+// MEDIUM DEVICE //
+@media screen and (min-width: $mediumDevice) {
+  #home-container {
+    margin: 1.5rem;
+  }
+
+  header img {
+    width: 35%;
+  }
+
+  .home-nav a {
+    padding: 0.5rem 3rem;
+    margin: 1rem;
+  }
+}
+
+// LARGE DEVICE //
+@media screen and (min-width: $largeDevice) {
+  #home-container {
+    margin: 4rem 10rem;
+  }
+
+  .page-container {
+    padding: 1rem;
+  }
+
+  header img {
+    width: 25%;
+  }
+}
+
+// 4K DEVICE //
+@media screen and (min-width: $xLargeDevice) {
+  #home-container {
+    margin: 4rem 50rem;
+  }
+
+  .page-container {
+    padding: 10rem 0rem;
+  }
+
+  header img {
+    width: 30%;
+  }
+
+  .home-nav a {
+    padding: 0.5rem 3rem;
+    margin: 1rem;
+  }
+}
+
+
 
 .transform {
   transition: all 2s ease;

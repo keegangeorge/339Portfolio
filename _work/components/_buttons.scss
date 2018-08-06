@@ -5,25 +5,60 @@
   transition: all 0.25s ease-in-out;
 }
 
+.btn-large {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+@media screen and (min-width: $mobileLarge) {
+  .btn-large {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: $mediumDevice) {
+  .btn-large {
+    padding: 0.5rem 3rem;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: $largeDevice) {
+  .btn-large {
+    padding: 0.5rem 4rem;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: $xLargeDevice) {
+  .btn-large {
+    padding: 0.5rem 2.5rem;
+    font-size: 2rem;
+  }
+}
+
 .btn-primary {
-  background: $primaryColor;
+  background: $quaternaryColor;
   color: white;
 }
 
-.btn-primary:focus, .btn-primary:hover {
-  background: $quaternaryColor;
+.btn-primary:focus,
+.btn-primary:hover {
+  background: $primaryColor;
   color: white;
   transform: scale(1.05);
 }
 
 .btn-secondary {
-  border: solid 0.1rem $primaryColor;
-  color: $primaryColor;
+  border: solid 0.1rem white;
+  color: white;
+  font-weight: 400;
+  text-transform: capitalize;
+  background-color: inherit;
+  box-shadow: inset 0 0 0 0 white;
 }
 
-.btn-secondary:focus, .btn-secondary:hover {
-  background-color: $primaryColor;
-  color: white;
+.btn-secondary:focus,
+.btn-secondary:hover {
+  color: $quaternaryColor;
+  box-shadow: inset 262px 0 0 0 white;
 }
 
 .btn-tertiary {
@@ -31,7 +66,8 @@
   color: white;
 }
 
-.btn-tertiary:focus, .btn-tertiary:hover {
+.btn-tertiary:focus,
+.btn-tertiary:hover {
   background-color: $primaryColor;
   color: white;
 }

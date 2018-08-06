@@ -58,6 +58,7 @@
 
 .portfolio-header-images {
   text-align: center;
+
 }
 
 .portfolio-header img {
@@ -66,6 +67,7 @@
   transition: all ease 0.3s;
   filter: grayscale(0.8);
   // margin: 0.5em;
+  // max-height: 25rem;
   margin: 0 auto;
 }
 
@@ -160,6 +162,13 @@
   .portfolio-project-probandscss {
     flex: 1;
   }
+}
+
+.portfolio-project-finalimg {
+  order: 6;
+}
+.portfolio-project-finalimg img {
+  max-width: 100%;
 }
 // STYLEGUIDE STYLING COLORS //
 

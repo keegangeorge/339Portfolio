@@ -8,94 +8,65 @@
   <meta name="author" content="Keegan George">
   <meta name="subject" content="Keegan George Developer Portfolio">
   <!-- Meta Tags: Theme Color -->
-  <meta name="theme-color" content="$primaryColor">
+  <meta name="theme-color" content="#0002d4">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="msapplication-navbutton-color" content="#5c5be0">
-  <meta name="msapplication-TileColor" content="#5c5be0">
-  <meta name="msapplication-TileImage" content="img/logo-windows.png">
+  <meta name="msapplication-navbutton-color" content="#0002d4">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <!-- Meta Tags: Icons -->
-  <link type="image/png" rel="shortcut icon" href="img/favicon-16.png" sizes="16x16">
-  <link type="image/png" rel="shortcut icon" href="img/favicon-32.png" sizes="32x32">
-  <link type="image/png" rel="shortcut icon" href="img/favicon-48.png" sizes="48x48">
-  <link type="image/png" rel="shortcut icon" href="img/favicon-96.png" sizes="96x96">
-  <link rel="apple-touch-startup-image" href="img/logo-iphone.png">
-  <link rel="icon" sizes="180x180" href="img/logo-iphone.png">
+  <!-- Meta Tags: Icon -->
+  <link type="image/png" rel="shortcut icon" href="img/icon.png">
+  <link rel="apple-touch-startup-image" href="img/icon.png">
+  <link rel="icon" sizes="192x192" href="img/icon.png">
   <!-- Links -->
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="css/onepage-scroll.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-  <script src="js/onepagescroll.js"></script>
 
   <title>Keegan George | Work</title>
 </head>
 
 <body>
-  <div class="main">
-    <div class="work-item" id="project-easytrim">
-      <div class="work-header">
-        <a href="index.html"><i class="fas fa-arrow-left"></i><span> Home</span></a>
-      </div>
-      <div class="work-content">
-        <h2>Easy Trim</h2>
-        <div class="project-tags">
-          <span>Mobile App</span>
-          <span>Android Studio</span>
-          <span>Java</span>
-          <span>XML</span>
-          <span>SQLite</span>
-          <span>Adobe Illustrator</span>
-        </div>
-        <p>Easy Trim is an Android application intended to facilitate the trimming of a boat. Easy Trim will keep track of the boat's trim angle at specific speeds for fast and easy adjustments to the trim.</p>
-        <a href="work-easytrim.html" class="btn btn-large btn-secondary">View Project</a>
-      </div>
-    </div>
+  <!-- Header Section START -->
+  <header>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="current"><a href="work.html">Work</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Header Section END -->
 
-    <div class="work-item" id="project-rookieninja">
-      <div class="work-header">
-        <a href="index.html"><i class="fas fa-arrow-left"></i><span> Home</span></a>
-      </div>
-      <div class="work-content">
+  <!-- Page Title -->
+  <h1>Work:</h1>
+  <p>Some projects I worked on.</p>
+
+  <section id="portfolio-projects">
+
+    <a href="work-rookieninja.html">
+      <div>
         <h2>Rookie Ninja</h2>
-        <div class="project-tags">
-          <span>Game Development</span>
-          <span>Processing</span>
-          <span>Adobe Photoshop</span>
-        </div>
-        <p>An arcade style platformer game created using the Processing language. Play as a ninja in training, dodging obstancles to reach the finish.</p>
-        <a href="work-rookieninja.html" class="btn btn-large btn-secondary">View Project</a>
+        <p>An arcade style game created using Processing (Java)</p>
       </div>
-    </div>
+    </a>
 
-    <div class="work-item" id="project-hairtell">
-      <div class="work-header">
-        <a href="index.html"><i class="fas fa-arrow-left"></i><span> Home</span></a>
-      </div>
-      <div class="work-content">
+    <div>
+      <a href="work-hairtell.html">
         <h2>Hairtell Salon</h2>
-        <div class="project-tags">
-          <span>Web Development</span>
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>Axure RP</span>
-          <span>Adobe Photoshop</span>
-        </div>
-        <p>The redesign and development of a website for a hair salon company. Website provides information about the company and its location.</p>
-        <a href="work-hairtell.html" class="btn btn-large btn-secondary">View Project</a>
-      </div>
+        <p>A redevelopment of a website for a hair salon.</p>
+      </a>
     </div>
-  </div>
+  </section>
+
+
+  <!-- Footer Section START -->
+  <footer>
+
+  </footer>
+  <!-- Footer Section END -->
 
   <!-- Script Links -->
-  <script>
-    onePageScroll(".main", {
-      sectionContainer: ".work-item",
-      loop: true,
-      responsiveFallback: false
-    });
-  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js">
   </script>
 

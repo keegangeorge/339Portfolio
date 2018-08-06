@@ -1,13 +1,14 @@
 @import "buttons";
+@import "forms";
 @import "grids";
 
- // PORTFOLIO PAGES STYLING //
+
+// PORTFOLIO PAGES STYLING //
 .portfolio-section {
   background-color: $secondaryColor;
-  // padding: 1em 1.2em;
-  padding: 0.8rem;
+  padding: 1em 1.2em;
   box-shadow: rgba(0, 0, 0, 0.4) 0 4px 60px;
-  margin: 0.4em 0;
+  margin: 0.5em 0em;
 }
 
 .portfolio-section h2 {
@@ -23,19 +24,17 @@
 .portfolio-section p {
   font-size: 1rem;
 }
+
 @media screen and (min-width: $mobileLarge) {
   .portfolio-section {
     padding: 1em 2em;
   }
 }
+
 @media screen and (min-width: $mediumDevice) {
   .portfolio-section {
-    margin: 1em;
+    margin: 1em 0em;
   }
-}
-
-.portfolio-project-technologies {
-  flex: 1;
 }
 
 // PORTFOLIO HEADER STYLING //
@@ -65,53 +64,46 @@
   width: 100%;
   transition: all ease 0.3s;
   filter: grayscale(0.8);
-  // margin: 0.5em;
-  // max-height: 25rem;
-  margin: 0 auto;
+  margin: 0.5em;
 }
 
 .ninja-images img:nth-child(2) {
   display: none;
 }
-
 .ninja-images img:nth-child(3) {
   display: none;
 }
-
 .ninja-images img:nth-child(4) {
   display: none;
 }
+
+
 @media screen and (min-width: $mobileLarge) {
   .portfolio-header img {
     width: 44%;
   }
-
   .ninja-images img:nth-child(2) {
     display: inline;
   }
-
   .ninja-images img:nth-child(3) {
     display: inline;
   }
-
   .ninja-images img:nth-child(4) {
     display: inline;
   }
 }
+
 @media screen and (min-width: $mediumDevice) {
   .portfolio-header h1 {
     font-size: 2.5rem;
   }
 
-  .portfolio-header img {}
+  .portfolio-header img {
+  }
 }
 @media screen and (min-width: $largeDevice) {
   .portfolio-header img {
     width: 20%;
-  }
-
-  .portfolio-project-technologies {
-    flex: 1;
   }
 }
 
@@ -124,21 +116,18 @@
 // PORTFOLIO CONTENT STYLING //
 .portfolio-project-container {
   display: flex;
-  margin: 1rem;
+  margin: 1em;
   flex-wrap: wrap;
 }
 
 .portfolio-project-description {
-  flex: 3;
+  flex: 100%;
   order: 1;
-}
 
-.portfolio-project-technologies {
-  flex: 1%;
 }
 
 .portfolio-project-process {
-  flex: 100%;
+  flex: 1;
   order: 2;
 }
 
@@ -153,25 +142,23 @@
   margin: 0 auto;
   padding: 1em;
 }
+
 @media screen and (min-width: $largeDevice) {
   .portfolio-project-process img {
     width: 60%;
   }
 }
+
 @media screen and (min-width: $xLargeDevice) {
   .portfolio-project-probandscss {
     flex: 1;
   }
 }
 
-.portfolio-project-finalimg {
-  order: 6;
-}
 
-.portfolio-project-finalimg img {
-  max-width: 100%;
-}
+
 // STYLEGUIDE STYLING COLORS //
+
 
 #styleguide-colors div {
   color: white;
@@ -232,347 +219,25 @@
   justify-content: center;
 }
 
-.page-container {
-  background: $secondaryColor;
-  padding: 0.3rem 0;
-  text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 5px 60px;
+.card:focus,
+.card:hover {
+  background-color: $primaryColor;
+  cursor: pointer;
+  transform: scale(1.02);
+  box-shadow: 0 0.05em 0.1em rgba(0, 0, 0, 0.5);
 }
 
-#home-container {
-  transition: all 1s ease-in-out;
-  // margin: 6rem; regular size
-  margin: 0.8rem;
+.card:focus > p,
+.card:hover > p {
+  color: #B6B6B6;
 }
 
-header h1 {
+.card:focus > h3,
+.card:hover > h3 {
+  color: #B6B6B6;
+}
+
+.about-fragment h3 {
   color: $primaryColor;
-  font-weight: 100;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 0;
-  font-size: 1.7rem; // remove on laptop
-}
 
-header h2 {
-  color: #76769E;
-  margin: 0;
-  padding: 0;
-  text-transform: capitalize;
-}
-
-header img {
-  padding: 1rem 0;
-  // width: 35%;
-  width: 40%; // change on laptop
-  margin: 0 auto;
-  display: block;
-}
-
-#header-tagline {
-  font-size: 1.3rem;
-  color: $quaternaryColor;
-}
-
-#header-tagline:after {
-  content: "";
-  animation: header-tagline 5s linear infinite;
-}
-@keyframes header-tagline {
-  0% {
-    content: "Full Stack Developer";
-  }
-
-  25% {
-    content: "App Development";
-  }
-
-  50% {
-    content: "Web Development";
-  }
-
-  75% {
-    content: "Game Development";
-  }
-
-  100% {
-    content: "UX Design";
-  }
-}
-
-.home-nav a {
-  // padding: 0.5rem 3rem;
-  padding: 0.6rem 2rem; // change on laptop
-  // margin: 0.5rem;
-  margin: 1rem; // change on laptop
-  font-weight: 500;
-  text-transform: lowercase;
-}
-// MOBILE LARGE //
-@media screen and (min-width: $mobileLarge) {
-  #home-container {
-    margin: 1rem;
-  }
-
-  header h1 {
-    font-size: 2rem;
-  }
-
-  header img {
-    width: 45%;
-  }
-
-  .home-nav a {
-    padding: 0.5rem 3rem;
-    margin: 0.5rem;
-  }
-}
-// MEDIUM DEVICE //
-@media screen and (min-width: $mediumDevice) {
-  #home-container {
-    margin: 1.5rem;
-  }
-
-  header img {
-    width: 35%;
-  }
-
-  .home-nav a {
-    padding: 0.5rem 3rem;
-    margin: 1rem;
-  }
-}
-// LARGE DEVICE //
-@media screen and (min-width: $largeDevice) {
-  #home-container {
-    margin: 4rem 10rem;
-  }
-
-  .page-container {
-    padding: 1rem;
-  }
-
-  header img {
-    width: 25%;
-  }
-}
-// 4K DEVICE //
-@media screen and (min-width: $xLargeDevice) {
-  #home-container {
-    margin: 4rem 50rem;
-  }
-
-  .page-container {
-    padding: 10rem 0;
-  }
-
-  header img {
-    width: 30%;
-  }
-
-  .home-nav a {
-    padding: 0.5rem 3rem;
-    margin: 1rem;
-  }
-}
-
-.transform {
-  transition: all 2s ease;
-}
-
-.transform-active {
-  background-color: #45CEE0;
-  height: 200px;
-  width: 200px;
-}
-
-.work-header {
-  // padding: 2rem 2rem;
-  padding: 1rem;
-}
-
-.work-header a span {
-  display: none; // remove on larger
-}
-
-.work-header i {
-  color: white;
-  font-size: 1.4rem;
-  // padding: 0.5rem; regular size
-  transition: transform ease 0.3s;
-}
-
-.work-header a {
-  color: white;
-  // font-size: 1.4rem;
-  font-size: 1rem;
-}
-
-.work-header i:focus,
-.work-header i:hover {
-  transform: scale(1.2);
-}
-
-.work-item {
-  width: 100%;
-  height: 100vh;
-}
-
-#project-easytrim {
-  background-color: #1777ff;
-}
-
-#project-rookieninja {
-  background-color: #c1272c;
-}
-
-#project-hairtell {
-  background-color: #58adff;
-}
-
-.work-item h2 {
-  // font-size: 5rem;
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 0;
-}
-
-.work-content {
-  // margin: 10rem 10rem; regular size
-  margin: 5rem 2rem;
-}
-
-.project-tags {
-  margin-bottom: 1rem;
-  margin-top: 0;
-}
-
-.work-content p {
-  color: rgba(255, 255, 255, 0.6);
-  // font-size: 1.3rem; regular size
-  font-size: 1rem;
-  width: 75%;
-}
-
-.project-tags span {
-  font-size: 0.8rem;
-  // padding: .2rem 1rem;
-  padding: 0.2rem 0.5rem;
-  background-color: rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.9);
-  border-radius: 0.1rem;
-}
-// LARGE MOBILE DEVICE //
-@media screen and (min-width: $mobileLarge) {
-  .work-header {
-    padding: 2rem;
-  }
-
-  .work-header a span {
-    display: inline;
-  }
-
-  .work-header i {
-    padding: 0.5rem;
-  }
-
-  .work-header a {
-    font-size: 1.4rem;
-  }
-
-  .work-item h2 {
-    font-size: 3.5rem;
-  }
-
-  .work-content {
-    margin: 5rem 2rem;
-  }
-
-  .work-content p {
-    font-size: 1.2rem;
-  }
-
-  .project-tags span {
-    padding: 0.2rem 0.5rem;
-  }
-}
-// MEDIUM DEVICE //
-@media screen and (min-width: $mediumDevice) {
-  .work-item h2 {
-    font-size: 5rem;
-  }
-
-  .work-content {
-    margin: 5rem 3rem;
-  }
-
-  .work-content p {
-    font-size: 1.3rem;
-  }
-
-  .project-tags span {
-    padding: 0.2rem 1rem;
-  }
-}
-// LARGE DEVICE //
-@media screen and (min-width: $largeDevice) {
-  .work-content {
-    margin: 10rem;
-  }
-}
-// 4K DEVICE //
-@media screen and (min-width: $xLargeDevice) {
-  .work-content {
-    margin: 10rem 20rem;
-    width: 40%;
-  }
-}
-
-.about-bio {
-  text-align: left;
-  margin: 1rem;
-}
-
-.about-bio h2 {
-  color: $primaryColor;
-  text-transform: capitalize;
-}
-
-.about-contact {
-  text-align: left;
-  margin: 1rem;
-}
-
-.about-contact h2 {
-  color: $primaryColor;
-  text-transform: capitalize;
-}
-
-.about-contact a {
-  color: $quaternaryColor;
-}
-
-.work-technologies {
-  fill: $quaternaryColor;
-  transition: fill ease 0.25s;
-  height: 50%;
-  width: 30%;
-}
-
-.work-technologies:focus,
-.work-technologies:hover {
-  fill: $primaryColor;
-}
-
-.blur {
-  filter: blur(5px);
-  transition: filter 400ms;
-}
-
-.blur.lazyloaded {
-  filter: blur(0);
-}
-
-.citations-list li {
-  margin: 1.5rem;
 }

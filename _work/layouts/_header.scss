@@ -1,54 +1,44 @@
-header {
-  top: -1.5em;
-  left: -1.5em;
-  right: 0;
-  margin: 1.5em;
-  width: 100%;
-  z-index: 999;
-}
-
-.main-nav a {
-  color: white;
-  text-decoration: none;
-  transition: background-color ease 0.3s;
-}
-
-.main-nav ul {
-  padding: 0;
-  list-style: none;
-}
-
-.styleguide-nav ul {
-  padding: 1.4em;
-}
-
-.main-nav li {
-  list-style: none;
-  display: block;
-  text-align: center;
+.home-nav h2 {
+  display: none;
 }
 
 .nav-container {
   display: flex;
-  flex-wrap: nowrap;
+  font-size: 1.5rem;
+  background-color: $quaternaryColor;
+  padding: 1rem;
 }
 
-.nav-title {
-  flex: 1;
+.nav-container .nav-title {
+  color: rgba(255, 255, 255, 0.59);
   text-align: center;
-  align-self: center;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  color: $quaternaryColor;
+  margin: 0 auto;
+  flex: 60;
 }
 
-.back-arrow i {
-  color: $quaternaryColor;
-  font-size: 1.5em;
-  transition: all ease 0.2s;
+.nav-container .back-arrow {
+  flex: 1;
 }
 
-.back-arrow i:focus, .back-arrow i:hover {
-  color: $primaryColor;
-  transform: scale(1.1);
+.nav-container .back-arrow i {
+  color: rgba(255, 255, 255, 0.59);
+  transition: transform ease 0.3s;
+}
+
+.nav-container .back-arrow i:focus,
+.nav-container .back-arrow i:hover {
+  transform: scale(1.5);
+  transform: rotate(360deg);
+  color: white;
+}
+
+.work-header i:focus,
+.work-header i:hover {
+  transform: rotate(360deg);
+}
+
+.citations {
+  text-align: center;
+  padding: 0.5rem;
+  margin: 1rem;
 }

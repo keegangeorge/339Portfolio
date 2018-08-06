@@ -30,8 +30,12 @@
 }
 @media screen and (min-width: $mediumDevice) {
   .portfolio-section {
-    margin: 1em 0;
+    margin: 1em;
   }
+}
+
+.portfolio-project-technologies {
+  flex: 1;
 }
 // PORTFOLIO HEADER STYLING //
 
@@ -61,7 +65,8 @@
   width: 100%;
   transition: all ease 0.3s;
   filter: grayscale(0.8);
-  margin: 0.5em;
+  // margin: 0.5em;
+  margin: 0 auto;
 }
 
 .ninja-images img:nth-child(2) {
@@ -103,6 +108,9 @@
   .portfolio-header img {
     width: 20%;
   }
+  .portfolio-project-technologies {
+    flex: 1;
+  }
 }
 
 .portfolio-header img:focus,
@@ -114,17 +122,21 @@
 
 .portfolio-project-container {
   display: flex;
-  margin: 1em;
+  margin: 1rem;
   flex-wrap: wrap;
 }
 
 .portfolio-project-description {
-  flex: 100%;
+  flex: 3;
   order: 1;
 }
 
+.portfolio-project-technologies {
+  flex: 1%;
+}
+
 .portfolio-project-process {
-  flex: 1;
+  flex: 100%;
   order: 2;
 }
 
@@ -537,11 +549,20 @@ header img {
   width: 30%;
 }
 
-.portfolio-project-technologies {
-  min-width: 100%;
-  min-height: 10%;
+.work-technologies svg {
+
 }
 
-.work-technologies:focus, .work-technologies:hover {
+.work-technologies:focus,
+.work-technologies:hover {
   fill: $primaryColor;
+}
+
+.blur {
+	filter: blur(5px);
+	transition: filter 400ms;
+}
+
+.blur.lazyloaded {
+	filter: blur(0);
 }

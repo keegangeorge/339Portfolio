@@ -1,3 +1,7 @@
+.home-nav h2 {
+  display: none;
+}
+
 .nav-container {
   display: flex;
   font-size: 1.5rem;
@@ -21,12 +25,20 @@
   transition: transform ease 0.3s;
 }
 
-.nav-container .back-arrow i:hover, .nav-container .back-arrow i:focus {
+.nav-container .back-arrow i:focus,
+.nav-container .back-arrow i:hover {
   transform: scale(1.5);
   transform: rotate(360deg);
   color: white;
 }
 
-.work-header i:focus, .work-header i:hover {
+.work-header i:focus,
+.work-header i:hover {
   transform: rotate(360deg);
+}
+
+.citations {
+  text-align: center;
+  padding: 0.5rem;
+  margin: 1rem;
 }

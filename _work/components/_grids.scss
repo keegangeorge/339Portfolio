@@ -1,8 +1,11 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
-html, body {
+body,
+html {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -12,7 +15,6 @@ html, body {
 section {
   margin-bottom: 3em;
 }
-
 /* Styleguide Page Responsiveness */
 #styleguide-colors {
   display: flex;

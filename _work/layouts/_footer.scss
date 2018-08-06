@@ -5,21 +5,19 @@ footer {
 
 footer i {
   color: $quaternaryColor;
-  // font-size: 2rem;
   font-size: 2rem;
   transition: all ease 0.3s;
-  // padding: 0 1rem;
   padding: 0 0.85rem;
 }
 
-footer i:hover, footer i:focus {
+footer i:focus,
+footer i:hover {
   color: $primaryColor;
 }
 
 .hidden {
   display: none;
 }
-
 // MOBILE LARGE //
 @media screen and (min-width: $mobileLarge) {
   footer i {

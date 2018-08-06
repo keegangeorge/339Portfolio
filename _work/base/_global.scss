@@ -1,20 +1,6 @@
-@import "_fontface"; // @include fontface(Quan, fonts/Quan, normal, normal, eot woff2 woff ttf);
 /* Font imported from Adobe Typekit and Google Fonts */
 @import url("https://use.typekit.net/zro5twg.css");
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro'); /* Default font */
-
-@mixin cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-@mixin easeOut {
-  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
 *,
 *:after,
@@ -30,7 +16,7 @@
 }
 
 html {
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 body {
@@ -46,7 +32,6 @@ code span {
   font-family: 'Source Code Pro', monospace;
   font-weight: 900;
 }
-// TEMPORARY ^^^^^^^^^^^^^
 
 * a {
   text-decoration: none;
@@ -91,7 +76,6 @@ p {
 
 ul {
   color: gray;
-  /* line-height: 1.5rem; */
 }
 
 ol {
@@ -99,31 +83,6 @@ ol {
   line-height: 1.5rem;
 }
 
-@mixin cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-@mixin easeOut {
-  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-@function longshadow($color_a,$color_b,$stepnum, $opacity: 1){
-	$gradient_steps: null;
-	@for $i from 1 through $stepnum {
-		$weight: ( ( $i - 1 ) / $stepnum ) * 100;
-		$colour_mix: mix($color_b, rgba($color_a, $opacity), $weight);
-		$seperator: null;
-		@if($i != $stepnum){
-			$seperator: #{','};
-		}
-		$gradient_steps: append( #{$gradient_steps}, #{$i}px #{$i}px $colour_mix $seperator );
- }
-  @return $gradient_steps;
-}
 
 ul {
   list-style-type: none;
@@ -135,77 +94,4 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-}
-
-.card-stack {
-  position: relative;
-  min-height: 90vh;
-  overflow: hidden;
-
-  &__item {
-    will-change: transform, opacity, box-shadow;
-    @include cover;
-    margin-bottom: 50px;
-    z-index: 1;
-    padding: 0 50px;
-    color: white;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 60px;
-    transform-origin: center 5%;
-    overflow: hidden;
-    @include easeOut;
-    background: $secondaryColor;
-  }
-}
-
-.views-toggle {
-  position: absolute;
-  top: 25px;
-  right: 50px;
-  width: 40px;
-  height: 40px;
-  z-index: 10;
-  cursor: pointer;
-  @include easeOut;
-  transition-duration: .3s;
-  visibility: visible;
-  opacity: 0.6;
-
-  &--hidden {
-    opacity: 0;
-    visibility: hidden;
-    z-index: 0;
-  }
-
-  &:hover {
-    opacity: 1;
-  }
-}
-
-
-.primary-title {
-  display: none;
-}
-
-.home-fragment h2 {
-  display: none;
-}
-
-.home-fragment img {
-  padding: 10em 0;
-  width: 20%;
-  margin: 0 auto;
-  display: block;
-}
-
-.card-stack h2 {
-  text-align: center;
-  color: $primaryColor;
-}
-
-.card-stack__item:hover, .card-stack__item:focus {
-  // border: 1px solid rgba(79, 79, 99, 0.4);
-}
-
-.card-stack__item {
-  transition: all ease-in-out 0.3s;
 }

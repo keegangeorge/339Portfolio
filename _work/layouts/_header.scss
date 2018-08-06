@@ -1,0 +1,32 @@
+.nav-container {
+  display: flex;
+  font-size: 1.5rem;
+  background-color: $quaternaryColor;
+  padding: 1rem;
+}
+
+.nav-container .nav-title {
+  color: rgba(255, 255, 255, 0.59);
+  text-align: center;
+  margin: 0 auto;
+  flex: 60;
+}
+
+.nav-container .back-arrow {
+  flex: 1;
+}
+
+.nav-container .back-arrow i {
+  color: rgba(255, 255, 255, 0.59);
+  transition: transform ease 0.3s;
+}
+
+.nav-container .back-arrow i:hover, .nav-container .back-arrow i:focus {
+  transform: scale(1.5);
+  transform: rotate(360deg);
+  color: white;
+}
+
+.work-header i:focus, .work-header i:hover {
+  transform: rotate(360deg);
+}

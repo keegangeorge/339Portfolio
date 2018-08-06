@@ -4,9 +4,10 @@
 
 .portfolio-section {
   background-color: $secondaryColor;
-  padding: 1em 1.2em;
+  // padding: 1em 1.2em;
+  padding: 0.8rem;
   box-shadow: rgba(0, 0, 0, 0.4) 0 4px 60px;
-  margin: 0.5em 0;
+  margin: 0.4em 0;
 }
 
 .portfolio-section h2 {
@@ -527,4 +528,20 @@ header img {
 
 .about-contact a {
   color: $quaternaryColor;
+}
+
+.work-technologies {
+  fill: $quaternaryColor;
+  transition: fill ease 0.25s;
+  height: 50%;
+  width: 30%;
+}
+
+.portfolio-project-technologies {
+  min-width: 100%;
+  min-height: 10%;
+}
+
+.work-technologies:focus, .work-technologies:hover {
+  fill: $primaryColor;
 }

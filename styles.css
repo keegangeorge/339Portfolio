@@ -551,10 +551,10 @@ section {
 
 .portfolio-section {
   background-color: #29282e;
-  padding: 1em 1.2em;
+  padding: 0.8rem;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 4px 60px;
   box-shadow: rgba(0, 0, 0, 0.4) 0 4px 60px;
-  margin: 0.5em 0; }
+  margin: 0.4em 0; }
 
 .portfolio-section h2 {
   color: #5c5be0;
@@ -988,6 +988,64 @@ header img {
 
 .about-contact a {
   color: #4f4f64; }
+
+.work-technologies {
+  fill: #4f4f64;
+  -webkit-transition: fill ease 0.25s;
+  -o-transition: fill ease 0.25s;
+  transition: fill ease 0.25s;
+  height: 50%;
+  width: 30%; }
+
+.portfolio-project-technologies {
+  min-width: 100%;
+  min-height: 10%; }
+
+.work-technologies:focus, .work-technologies:hover {
+  fill: #5c5be0; }
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.5rem;
+  background-color: #4f4f64;
+  padding: 1rem; }
+
+.nav-container .nav-title {
+  color: rgba(255, 255, 255, 0.59);
+  text-align: center;
+  margin: 0 auto;
+  -webkit-box-flex: 60;
+  -ms-flex: 60;
+  flex: 60; }
+
+.nav-container .back-arrow {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.nav-container .back-arrow i {
+  color: rgba(255, 255, 255, 0.59);
+  -webkit-transition: -webkit-transform ease 0.3s;
+  transition: -webkit-transform ease 0.3s;
+  -o-transition: transform ease 0.3s;
+  transition: transform ease 0.3s;
+  transition: transform ease 0.3s, -webkit-transform ease 0.3s; }
+
+.nav-container .back-arrow i:hover, .nav-container .back-arrow i:focus {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  color: white; }
+
+.work-header i:focus, .work-header i:hover {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg); }
 
 footer {
   text-align: center;
